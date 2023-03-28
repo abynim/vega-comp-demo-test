@@ -1,7 +1,7 @@
 import "./App.css";
 import "@heartlandone/vega/style/vega.css";
-import SingleCheckbox from "./examples/components/checkbox/single-checkbox";
-import CheckboxGroup from "./examples/components/checkbox/checkbox-group";
+import SingleCheckbox from "./components/checkbox/examples/single-checkbox";
+import CheckboxGroup from "./components/checkbox/examples/checkbox-group";
 
 export default function App() {
   return (
