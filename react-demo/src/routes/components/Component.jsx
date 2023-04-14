@@ -12,6 +12,7 @@ import Badge from "../../components/badge/examples/badge";
 
 import Banner from "../../components/banner/examples/banner";
 import BannerWithStickyHeader from "../../components/banner/examples/banner-sticky-header";
+import BannerStickyHeaderIFrame from "../../components/banner/examples/banner-sticky-header-iframe";
 
 import Button from "../../components/button/examples/button";
 import ButtonWithIcon from "../../components/button/examples/button-with-icon";
@@ -58,6 +59,8 @@ import Icon from "../../components/icon/examples/icon";
 import ImageUploader from "../../components/image-uploader/examples/image-uploader";
 
 import InputField from "../../components/input-field/example/input-field";
+
+import InputCreditCard from "../../components/input-credit-card/examples/input-credit-card";
 
 import ItemToggle from "../../components/item-toggle/examples/item-toggle";
 
@@ -177,13 +180,16 @@ export default function Component({ params }) {
           <ComponentSubContent subTitle={`Example`} background={true}>
             <Banner />
           </ComponentSubContent>
-          {/* <ComponentSubContent
+          <ComponentSubContent
             subTitle={`Example of sticky header mode`}
             background={true}
           >
-            <BannerWithStickyHeader />
-          </ComponentSubContent> */}
+            <BannerStickyHeaderIFrame />
+          </ComponentSubContent>
         </ComponentContent>
+      )}
+      {component === "banner-sticky-header" && (
+        <BannerWithStickyHeader />
       )}
       {component === "button" && (
         <ComponentContent title={`Button`}>
@@ -348,6 +354,13 @@ export default function Component({ params }) {
         <ComponentContent title={`Input Field`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <InputField />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "input-credit-card" && (
+        <ComponentContent title={`Input Credit Card`}>
+          <ComponentSubContent subTitle={`Example`} background={true}>
+            <InputCreditCard />
           </ComponentSubContent>
         </ComponentContent>
       )}
