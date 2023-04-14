@@ -7,33 +7,31 @@ const App = () => {
     setActiveTab(e.detail);
   };
   return (
-    <div style={{ minWidth: "400px" }}>
-      <VegaFlex direction={`col`}>
-        <VegaTabGroup
-          gap={`size-8`}
-          showCloseButton={false}
-          tabItems={[
-            { label: "Home", dataTarget: "nav-home", prefixIcon: "home" },
-            { label: "Profile", dataTarget: "nav-profile" },
-            { label: "Contact", dataTarget: "nav-contact" },
-          ]}
-          onVegaClick={onTabClick}
-        />
-        <div className={`v-py-size-24`}>
-          {activeTab === "nav-home" && (
-            <div className={`v-font-p2-short v-text-primary`}>
-              This is the Home tab
-            </div>
-          )}
-          {activeTab === "nav-profile" && (
-            <div className={`v-font-p2-short v-text-primary`}>Profile tab</div>
-          )}
-          {activeTab === "nav-contact" && (
-            <div className={`v-font-p2-short v-text-primary`}>Contact tab</div>
-          )}
-        </div>
-      </VegaFlex>
-    </div>
+    <VegaFlex direction={`col`}>
+      <VegaTabGroup
+        gap={`size-8`}
+        showCloseButton={false}
+        tabItems={[
+          { label: "Home", dataTarget: "nav-home", prefixIcon: "home" },
+          { label: "Profile", dataTarget: "nav-profile" },
+          { label: "Contact", dataTarget: "nav-contact" },
+        ]}
+        onVegaClick={onTabClick}
+      />
+      <div className={`v-py-size-24`}>
+        {activeTab === "nav-home" && (
+          <div className={`v-font-p2-short v-text-primary`}>
+            This is the Home tab
+          </div>
+        )}
+        {activeTab === "nav-profile" && (
+          <div className={`v-font-p2-short v-text-primary`}>Profile tab</div>
+        )}
+        {activeTab === "nav-contact" && (
+          <div className={`v-font-p2-short v-text-primary`}>Contact tab</div>
+        )}
+      </div>
+    </VegaFlex>
   );
 };
 export default App;
