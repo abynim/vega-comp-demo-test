@@ -17,8 +17,12 @@ export default function App() {
   };
 
   return (
-    <VegaFlex direction={`col`}>
-      <VegaFlex gap={`size-16`}>
+    <div>
+      <VegaFlex
+        gap={`size-16`}
+        justifyContent="center"
+        className="v-w-full v-mb-size-16"
+      >
         <VegaButtonCircle
           variant={`secondary`}
           size={`default`}
@@ -60,6 +64,6 @@ export default function App() {
           <div className={`v-text-primary v-font-p2-short`}>Third page</div>
         </VegaCard>
       </VegaCarousel>
-    </VegaFlex>
+    </div>
   );
 }
