@@ -7,61 +7,61 @@ import {
   VegaButton,
 } from "@heartlandone/vega-react";
 
-const EmployeeListData = [
-  {
-    employeeId: "1",
-    name: "Employee 1",
-    role: ["1"],
-  },
-  {
-    employeeId: "2",
-    name: "Employee 2",
-    role: ["2"],
-  },
-  {
-    employeeId: "3",
-    name: "Employee 3",
-    role: ["0"],
-  },
-  {
-    employeeId: "4",
-    name: "Employee 4",
-    role: ["1"],
-  },
-];
-
-const DataSource = [
-  {
-    key: "1",
-    employeeId: "1",
-    name: "Employee 1",
-    date: "01/01/2022",
-    amount: 100,
-    balance: 100,
-    status: 1,
-    role: ["1"],
-    desc: "Test text description",
-    address: "New_York_No._1_Lake_Park",
-    time: "23:35",
-    createAt: "01/01/2023",
-    notifications: true,
-  },
-  {
-    key: "3",
-    employeeId: "3",
-    name: "Employee 3",
-    date: "01/03/2022",
-    amount: 400,
-    balance: 300,
-    status: 1,
-    role: ["1", "2"],
-    desc: "Test text description Test text description Test text description",
-    address: "New York No. 3 Lake Park",
-    createAt: "01/01/2023",
-  },
-];
-
 const App = () => {
+  const EmployeeListData = [
+    {
+      employeeId: "1",
+      name: "Employee 1",
+      role: ["1"],
+    },
+    {
+      employeeId: "2",
+      name: "Employee 2",
+      role: ["2"],
+    },
+    {
+      employeeId: "3",
+      name: "Employee 3",
+      role: ["0"],
+    },
+    {
+      employeeId: "4",
+      name: "Employee 4",
+      role: ["1"],
+    },
+  ];
+
+  const DataSource = [
+    {
+      key: "1",
+      employeeId: "1",
+      name: "Employee 1",
+      date: "01/01/2022",
+      amount: 100,
+      balance: 100,
+      status: 1,
+      role: ["1"],
+      desc: "Test text description",
+      address: "New_York_No._1_Lake_Park",
+      time: "23:35",
+      createAt: "01/01/2023",
+      notifications: true,
+    },
+    {
+      key: "3",
+      employeeId: "3",
+      name: "Employee 3",
+      date: "01/03/2022",
+      amount: 400,
+      balance: 300,
+      status: 1,
+      role: ["1", "2"],
+      desc: "Test text description Test text description Test text description",
+      address: "New York No. 3 Lake Park",
+      createAt: "01/01/2023",
+    },
+  ];
+
   const tableRef = useRef();
   const saveButton = useRef();
   const [editedData, setEditedData] = useState(null);

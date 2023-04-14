@@ -7,22 +7,22 @@ import {
   VegaButton,
 } from "@heartlandone/vega-react";
 
-const DataSource = [
-  {
-    key: "1",
-    employeeId: "1",
-    name: "Employee 1",
-    balance: 100,
-  },
-  {
-    key: "2",
-    employeeId: "2",
-    name: "Employee 2",
-    balance: 300,
-  },
-];
-
 const App = () => {
+  const DataSource = [
+    {
+      key: "1",
+      employeeId: "1",
+      name: "Employee 1",
+      balance: 100,
+    },
+    {
+      key: "2",
+      employeeId: "2",
+      name: "Employee 2",
+      balance: 300,
+    },
+  ];
+
   const tableRef = useRef();
   const [dataSource, setDataSource] = useState(DataSource);
   const [editedData, setEditedData] = useState(null);
