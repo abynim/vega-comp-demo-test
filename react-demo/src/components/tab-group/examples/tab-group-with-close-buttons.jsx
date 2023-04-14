@@ -1,13 +1,8 @@
-import { useState } from "react";
-import { VegaTabGroup, VegaFlex } from "@heartlandone/vega-react";
+import { VegaTabGroup } from "@heartlandone/vega-react";
 
 const App = () => {
-  const [activeTab, setActiveTab] = useState("nav-home");
-  const onTabClick = (e) => {
-    setActiveTab(e.detail);
-  };
   return (
-    <VegaFlex direction={`col`}>
+    <div style={{ minWidth: "400px" }}>
       <VegaTabGroup
         gap={`size-8`}
         showCloseButton={true}
@@ -16,22 +11,25 @@ const App = () => {
           { label: "Profile", dataTarget: "nav-profile" },
           { label: "Contact", dataTarget: "nav-contact" },
         ]}
-        onVegaClick={onTabClick}
-      />
-      <div className={`v-py-size-24`}>
-        {activeTab === "nav-home" && (
-          <div className={`v-font-p2-short v-text-primary`}>
-            This is the Home tab
+        selectedTabDataTarget={`nav-profile`}
+      >
+        <VegaTabGroupPanel id="nav-home">
+          <div className={`v-py-size-24 v-font-p2-short v-text-primary`}>
+            This is the Home tab VegaTabGroupPanel
           </div>
-        )}
-        {activeTab === "nav-profile" && (
-          <div className={`v-font-p2-short v-text-primary`}>Profile tab</div>
-        )}
-        {activeTab === "nav-contact" && (
-          <div className={`v-font-p2-short v-text-primary`}>Contact tab</div>
-        )}
-      </div>
-    </VegaFlex>
+        </VegaTabGroupPanel>
+        <VegaTabGroupPanel id="nav-profile">
+          <div className={`v-py-size-24 v-font-p2-short v-text-primary`}>
+            Profile tab
+          </div>
+        </VegaTabGroupPanel>
+        <VegaTabGroupPanel id="nav-contact">
+          <div className={`v-py-size-24 v-font-p2-short v-text-primary`}>
+            Contact tab
+          </div>
+        </VegaTabGroupPanel>
+      </VegaTabGroup>
+    </div>
   );
 };
 export default App;
