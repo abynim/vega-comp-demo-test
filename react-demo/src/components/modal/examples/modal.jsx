@@ -9,9 +9,10 @@ const App = () => {
         size={400}
         backdrop={`static`}
         open={isOpen}
+        modalTitle="Modal Title"
         onVegaClose={() => setIsOpen(false)}
       >
-        <p className={`v-font-p2-short v-text-primary`}>
+        <p className={`v-font-p2-short v-text-primary v-mb-size-24`}>
           This content will appear in the modal.
         </p>
 

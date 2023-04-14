@@ -8,18 +8,20 @@ const App = () => {
     comboBox.current.value = [...comboBox.current.value, evt.detail];
   };
   return (
-    <VegaComboBox
-      ref={comboBox}
-      label={`label text`}
-      required={true}
-      source={[
-        { key: "key1", label: "option 1" },
-        { key: "key2", label: "option 2" },
-        { key: "key3", label: "option 3" },
-      ]}
-      vegaDropdownProps={{ dynamicOption: true }}
-      onVegaCreate={onCreate}
-    />
+    <div style={{ minWidth: "300px" }}>
+      <VegaComboBox
+        ref={comboBox}
+        label={`label text`}
+        required={true}
+        source={[
+          { key: "key1", label: "option 1" },
+          { key: "key2", label: "option 2" },
+          { key: "key3", label: "option 3" },
+        ]}
+        vegaDropdownProps={{ dynamicOption: true }}
+        onVegaCreate={onCreate}
+      />
+    </div>
   );
 };
 export default App;

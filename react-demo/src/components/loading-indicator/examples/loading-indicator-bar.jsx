@@ -1,6 +1,10 @@
 import { VegaLoadingIndicator } from "@heartlandone/vega-react";
 
 const App = () => {
-  return <VegaLoadingIndicator mode={`indeterminate`} shape={`bar`} />;
+  return (
+    <div style={{ minWidth: "300px" }}>
+      <VegaLoadingIndicator mode={`indeterminate`} shape={`bar`} />
+    </div>
+  );
 };
 export default App;

@@ -58,7 +58,7 @@ import Icon from "../../components/icon/examples/icon";
 
 import ImageUploader from "../../components/image-uploader/examples/image-uploader";
 
-import InputField from "../../components/input-field/example/input-field";
+import InputField from "../../components/input/example/input-field";
 
 import InputCreditCard from "../../components/input-credit-card/examples/input-credit-card";
 
@@ -87,12 +87,12 @@ import ProgressTracker from "../../components/progress-tracker/examples/progress
 import ProgressTrackerHorizontal from "../../components/progress-tracker/examples/progress-tracker-horizontal";
 
 import Popover from "../../components/popover/examples/popover";
-import RadioButton from "../../components/radio-button/examples/radio-button";
+import RadioButton from "../../components/radio/examples/radio-button";
 
-import Select from "../../components/select/examples/select";
-import SelectSmall from "../../components/select/examples/select-small";
+import Select from "../../components/input-select/examples/select";
+import SelectSmall from "../../components/input-select/examples/select-small";
 
-import SidebarNavigation from "../../components/sidebar-navigation/examples/sidebar-navigation";
+import SidebarNavigation from "../../components/sidenav/examples/sidebar-navigation";
 
 import Stepper from "../../components/stepper/examples/stepper";
 import TabGroup from "../../components/tab-group/examples/tab-group";
@@ -115,7 +115,7 @@ import TableWithHorizontalPadding from "../../components/table/examples/table-wi
 import TableEditable from "../../components/table/examples/table-editable";
 import TableEditableComplex from "../../components/table/examples/table-editable-complex";
 
-import TextArea from "../../components/text-area/examples/text-area";
+import TextArea from "../../components/textarea/examples/text-area";
 
 import TimePicker from "../../components/time-picker/examples/time-picker";
 import TimePicker24Hour from "../../components/time-picker/examples/time-picker-24-hour";
@@ -188,9 +188,7 @@ export default function Component({ params }) {
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "banner-sticky-header" && (
-        <BannerWithStickyHeader />
-      )}
+      {component === "banner-sticky-header" && <BannerWithStickyHeader />}
       {component === "button" && (
         <ComponentContent title={`Button`}>
           <ComponentSubContent subTitle={`Primary variant`} background={true}>
