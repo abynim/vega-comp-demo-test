@@ -1,5 +1,9 @@
 import { useState } from "react";
-import { VegaTabGroup, VegaFlex } from "@heartlandone/vega-react";
+import {
+  VegaTabGroup,
+  VegaTabGroupPanel,
+  VegaFlex,
+} from "@heartlandone/vega-react";
 
 const App = () => {
   const [activeTab, setActiveTab] = useState("nav-home");
@@ -26,12 +30,19 @@ const App = () => {
         onVegaClick={onTabClick}
         className={`v-w-full`}
         positionRelativeTo={`.example-container`}
-      />
-      <div className={`v-py-size-24`}>
-        <div
-          className={`v-font-p2-short v-text-primary`}
-        >{`This is the ${activeTab}`}</div>
-      </div>
+      >
+        <VegaTabGroupPanel id={`nav-home`} className={`v-py-size-24`}>
+          <div className={`v-font-p2-short v-text-primary`}>
+            This is the Home tab
+          </div>
+        </VegaTabGroupPanel>
+        <VegaTabGroupPanel id={`nav-profile`} className={`v-py-size-24`}>
+          <div className={`v-font-p2-short v-text-primary`}>Profile tab</div>
+        </VegaTabGroupPanel>
+        <VegaTabGroupPanel id={`nav-contact`} className={`v-py-size-24`}>
+          <div className={`v-font-p2-short v-text-primary`}>Contact tab</div>
+        </VegaTabGroupPanel>
+      </VegaTabGroup>
     </VegaFlex>
   );
 };

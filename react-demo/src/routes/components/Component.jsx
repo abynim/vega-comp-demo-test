@@ -58,7 +58,7 @@ import Icon from "../../components/icon/examples/icon";
 
 import ImageUploader from "../../components/image-uploader/examples/image-uploader";
 
-import InputField from "../../components/input/example/input-field";
+import InputField from "../../components/input/examples/input";
 
 import InputCreditCard from "../../components/input-credit-card/examples/input-credit-card";
 
@@ -87,12 +87,12 @@ import ProgressTracker from "../../components/progress-tracker/examples/progress
 import ProgressTrackerHorizontal from "../../components/progress-tracker/examples/progress-tracker-horizontal";
 
 import Popover from "../../components/popover/examples/popover";
-import RadioButton from "../../components/radio/examples/radio-button";
+import RadioButton from "../../components/radio/examples/radio";
 
-import Select from "../../components/input-select/examples/select";
-import SelectSmall from "../../components/input-select/examples/select-small";
+import Select from "../../components/input-select/examples/input-select";
+import SelectSmall from "../../components/input-select/examples/input-select-small";
 
-import SidebarNavigation from "../../components/sidenav/examples/sidebar-navigation";
+import SidebarNavigation from "../../components/sidenav/examples/sidenav";
 
 import Stepper from "../../components/stepper/examples/stepper";
 import TabGroup from "../../components/tab-group/examples/tab-group";
@@ -115,7 +115,7 @@ import TableWithHorizontalPadding from "../../components/table/examples/table-wi
 import TableEditable from "../../components/table/examples/table-editable";
 import TableEditableComplex from "../../components/table/examples/table-editable-complex";
 
-import TextArea from "../../components/textarea/examples/text-area";
+import TextArea from "../../components/textarea/examples/textarea";
 
 import TimePicker from "../../components/time-picker/examples/time-picker";
 import TimePicker24Hour from "../../components/time-picker/examples/time-picker-24-hour";
@@ -123,6 +123,20 @@ import TimePicker24Hour from "../../components/time-picker/examples/time-picker-
 import ToggleSwitch from "../../components/toggle-switch/examples/toggle-switch";
 
 import Tooltip from "../../components/tooltip/examples/tooltip";
+
+import Box from "../../components/box/examples/box";
+
+import Card from "../../components/card/examples/card";
+
+import Flex from "../../components/flex/examples/flex";
+import FlexWithDifferentWidth from "../../components/flex/examples/flex-with-different-width";
+import FlexCombination from "../../components/flex/examples/flex-combination";
+import FlexAlignAndJustify from "../../components/flex/examples/flex-align-and-justify";
+
+import Grid from "../../components/grid/examples/grid";
+import GridWithDifferentSizes from "../../components/grid/examples/grid-with-different-sizes";
+
+import Form from "../../components/form/examples/form";
 
 export default function Component({ params }) {
   let { component } = useParams();
@@ -348,7 +362,7 @@ export default function Component({ params }) {
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "input-field" && (
+      {component === "input" && (
         <ComponentContent title={`Input Field`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <InputField />
@@ -502,14 +516,14 @@ export default function Component({ params }) {
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "radio-button" && (
+      {component === "radio" && (
         <ComponentContent title={`Radio Button`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <RadioButton />
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "select" && (
+      {component === "input-select" && (
         <ComponentContent title={`Select`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <Select />
@@ -519,7 +533,7 @@ export default function Component({ params }) {
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "sidebar-navigation" && (
+      {component === "sidenav" && (
         <ComponentContent title={`Sidebar Navigation`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <SidebarNavigation />
@@ -641,7 +655,7 @@ export default function Component({ params }) {
           </ComponentSubContent>
         </ComponentContent>
       )}
-      {component === "text-area" && (
+      {component === "textarea" && (
         <ComponentContent title={`Text Area`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <TextArea />
@@ -669,6 +683,62 @@ export default function Component({ params }) {
         <ComponentContent title={`Tooltip`}>
           <ComponentSubContent subTitle={`Example`} background={true}>
             <Tooltip />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "box" && (
+        <ComponentContent title={`Box`}>
+          <ComponentSubContent subTitle={`Example`} background={true}>
+            <Box />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "card" && (
+        <ComponentContent title={`Card`}>
+          <ComponentSubContent subTitle={`Example`} background={true}>
+            <Card />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "flex" && (
+        <ComponentContent title={`Flex`}>
+          <ComponentSubContent
+            subTitle={`Child Items with the same width`}
+            background={true}
+          >
+            <Flex />
+          </ComponentSubContent>
+          <ComponentSubContent
+            subTitle={`Child Items with a different width`}
+            background={true}
+          >
+            <FlexWithDifferentWidth />
+          </ComponentSubContent>
+          <ComponentSubContent subTitle={`Combination`} background={true}>
+            <FlexCombination />
+          </ComponentSubContent>
+          <ComponentSubContent subTitle={`Align and Justify`} background={true}>
+            <FlexAlignAndJustify />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "grid" && (
+        <ComponentContent title={`Grid`}>
+          <ComponentSubContent subTitle={`Example`} background={true}>
+            <Grid />
+          </ComponentSubContent>
+          <ComponentSubContent
+            subTitle={`Example with different sizes`}
+            background={true}
+          >
+            <GridWithDifferentSizes />
+          </ComponentSubContent>
+        </ComponentContent>
+      )}
+      {component === "form" && (
+        <ComponentContent title={`Form`}>
+          <ComponentSubContent subTitle={`Example`} background={true}>
+            <Form />
           </ComponentSubContent>
         </ComponentContent>
       )}

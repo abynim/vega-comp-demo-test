@@ -6,7 +6,7 @@ import Components from "./routes/components/index";
 import Component from "./routes/components/Component";
 import ErrorPage from "./routes/components/ErrorPage";
 
-import BannerWithStickyHeader from "./components/banner/examples/banner-sticky-header"
+import BannerWithStickyHeader from "./components/banner/examples/banner-sticky-header";
 
 const App = createBrowserRouter([
   {
@@ -22,7 +22,7 @@ const App = createBrowserRouter([
   },
   {
     path: "/banner-sticky-header",
-    element: <BannerWithStickyHeader />
+    element: <BannerWithStickyHeader />,
   },
 ]);
 

@@ -42,6 +42,11 @@ export default function Components() {
     { ref: "time-picker", title: "Time Picker" },
     { ref: "toggle-switch", title: "Toggle Switch" },
     { ref: "tooltip", title: "Tooltip" },
+    { ref: "box", title: "Box" },
+    { ref: "card", title: "Card" },
+    { ref: "flex", title: "Flex" },
+    { ref: "grid", title: "Grid" },
+    { ref: "form", title: "Form" },
   ];
   return (
     <VegaGrid column={{ default: 1, S: 1, L: 5 }} row={1} gap={`size-0`}>

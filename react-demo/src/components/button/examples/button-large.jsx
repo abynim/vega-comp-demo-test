@@ -2,12 +2,7 @@ import { VegaButton } from "@heartlandone/vega-react";
 
 const App = () => {
   return (
-    <VegaButton
-      variant={`primary`}
-      size={`large`}
-      disabled={false}
-      onVegaClick={() => {}}
-    >
+    <VegaButton size={`large`} onVegaClick={() => {}}>
       Checkout
     </VegaButton>
   );
