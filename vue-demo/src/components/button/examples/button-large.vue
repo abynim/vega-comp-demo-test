@@ -13,7 +13,7 @@ export default {
 </script>
 
 <template>
-  <VegaButton variant="primary" :disabled="false" on-vega-click="onClick" size="large">
+  <VegaButton variant="primary" :disabled="false" @vegaclick="onClick" size="large">
     Checkout
   </VegaButton>
 </template>

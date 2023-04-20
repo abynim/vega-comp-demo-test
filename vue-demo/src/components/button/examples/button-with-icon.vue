@@ -16,7 +16,7 @@ export default {
   <VegaButton
     variant="primary"
     :disabled="false"
-    on-vega-click="onClick"
+    @vegaclick="onClick"
     icon="announcement"
     icon-align="left"
   >

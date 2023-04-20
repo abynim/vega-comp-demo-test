@@ -22,7 +22,6 @@ const App = () => {
       balance: 300,
     },
   ];
-
   const tableRef = useRef();
   const [dataSource, setDataSource] = useState(DataSource);
   const [editedData, setEditedData] = useState(null);

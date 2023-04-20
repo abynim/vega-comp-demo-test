@@ -1,0 +1,3 @@
+To have the `vega-combo-box` create a new item, set `vegaDropdownProps.dynamicOption` as true. When searching for an item, if no match is found, the text “Add `{search string}`” will display. Clicking on this text will emit a `vegaCreate` event with the search string as the parameter.
+
+While receiving this event, you can generate a key and create it as a `DropdownSourceItem` and you may also set it as a source, and push the key to a value.

@@ -1,0 +1,3 @@
+If you would like the `vega-dropdown` component to create new items, set `dynamic-option` and `searchable` to be true. While searching items, if no proper item is found, “Add `{search string}`” will be displayed. Clicking “Add {search string}” with emit a `vegaCreate` event with the search string as the parameter.
+
+While receiving this event, you can genearate a key and make it a `DropdownSourceItem`, or you may set it to source and push the key to the value.

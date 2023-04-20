@@ -10,7 +10,7 @@ export default {
 </script>
 <template>
   <VegaAppFooter
-    :ref="footer"
+    ref="footer"
     term-of-use-label="Terms of use"
     privacy-policy-label="Privacy Policy"
     :additional-links="[
