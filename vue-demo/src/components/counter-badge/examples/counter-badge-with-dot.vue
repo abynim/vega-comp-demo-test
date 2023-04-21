@@ -1,5 +1,5 @@
 <script>
-import { VegaCounterBadge, VegaButton } from '@heartlandone/vega-vue'
+import { VegaCounterBadge, VegaButton } from "@heartlandone/vega-vue"
 
 export default {
   data() {
@@ -9,7 +9,11 @@ export default {
 }
 </script>
 <template>
-  <VegaCounterBadge color="bg-danger" :dot="true" :count="9">
+  <VegaCounterBadge
+    color="bg-danger"
+    :dot="true"
+    :count="9"
+  >
     <VegaButton>Button Example</VegaButton>
   </VegaCounterBadge>
 </template>

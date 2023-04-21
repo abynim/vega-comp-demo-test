@@ -1,5 +1,5 @@
 <script>
-import { VegaChip } from '@heartlandone/vega-vue'
+import { VegaChip } from "@heartlandone/vega-vue"
 
 export default {
   data() {

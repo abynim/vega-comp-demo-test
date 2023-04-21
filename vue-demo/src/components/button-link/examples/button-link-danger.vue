@@ -1,5 +1,5 @@
 <script>
-import { VegaButtonLink } from '@heartlandone/vega-vue'
+import { VegaButtonLink } from "@heartlandone/vega-vue"
 
 export default {
   data() {
@@ -9,5 +9,9 @@ export default {
 }
 </script>
 <template>
-  <VegaButtonLink link="https://heartland.us" danger="true">Link Label</VegaButtonLink>
+  <VegaButtonLink
+    link="https://heartland.us"
+    danger="true"
+    >Link Label</VegaButtonLink
+  >
 </template>

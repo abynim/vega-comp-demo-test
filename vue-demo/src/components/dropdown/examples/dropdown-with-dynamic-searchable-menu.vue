@@ -1,23 +1,23 @@
 <script>
-import { VegaDropdown, VegaButton } from '@heartlandone/vega-vue'
+import { VegaDropdown, VegaButton } from "@heartlandone/vega-vue"
 
 export default {
   data() {
     return {
       sourceMap: {
         google: {
-          label: 'Google',
-          key: 'google',
-          url: 'https://google.com',
-          group: 'links'
+          label: "Google",
+          key: "google",
+          url: "https://google.com",
+          group: "links"
         },
         vega: {
-          label: 'Vega',
-          key: 'vega',
-          url: 'https://vega.hlprd.com/',
-          group: 'links'
+          label: "Vega",
+          key: "vega",
+          url: "https://vega.hlprd.com/",
+          group: "links"
         },
-        option3: { label: 'Option3', key: 'option3', url: '#', group: 'options' }
+        option3: { label: "Option3", key: "option3", url: "#", group: "options" }
       }
     }
   },
@@ -28,7 +28,7 @@ export default {
       this.$refs.dropdown.$el.value = [...this.$refs.dropdown.$el.value, evt.detail]
     },
     onLinkClick(evt) {
-      window.open(this.sourceMap[evt.detail].url, '_blank')
+      window.open(this.sourceMap[evt.detail].url, "_blank")
     }
   }
 }

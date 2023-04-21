@@ -1,5 +1,5 @@
 <script>
-import { VegaBanner } from '@heartlandone/vega-vue'
+import { VegaBanner } from "@heartlandone/vega-vue"
 
 export default {
   data() {

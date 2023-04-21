@@ -1,5 +1,5 @@
 <script>
-import { VegaAppFooter } from '@heartlandone/vega-vue'
+import { VegaAppFooter } from "@heartlandone/vega-vue"
 export default {
   data() {
     return {}
@@ -8,5 +8,8 @@ export default {
 }
 </script>
 <template>
-  <VegaAppFooter term-of-use-label="Terms of use" privacy-policy-label="Privacy Policy" />
+  <VegaAppFooter
+    term-of-use-label="Terms of use"
+    privacy-policy-label="Privacy Policy"
+  />
 </template>

@@ -1,5 +1,5 @@
 <script>
-import { VegaButton } from '@heartlandone/vega-vue'
+import { VegaButton } from "@heartlandone/vega-vue"
 
 export default {
   data() {
@@ -13,5 +13,11 @@ export default {
 </script>
 
 <template>
-  <VegaButton variant="primary" :disabled="false" @vegaclick="onClick"> Checkout </VegaButton>
+  <VegaButton
+    variant="primary"
+    :disabled="false"
+    @vegaclick="onClick"
+  >
+    Checkout
+  </VegaButton>
 </template>

@@ -1,5 +1,5 @@
 <script>
-import { VegaComboBox } from '@heartlandone/vega-vue'
+import { VegaComboBox } from "@heartlandone/vega-vue"
 
 export default {
   data() {

@@ -1,5 +1,5 @@
 <script>
-import { VegaDatePicker } from '@heartlandone/vega-vue'
+import { VegaDatePicker } from "@heartlandone/vega-vue"
 
 export default {
   data() {

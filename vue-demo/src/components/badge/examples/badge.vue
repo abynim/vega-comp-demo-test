@@ -1,5 +1,5 @@
 <script>
-import { VegaBadge } from '@heartlandone/vega-vue'
+import { VegaBadge } from "@heartlandone/vega-vue"
 
 export default {
   data() {

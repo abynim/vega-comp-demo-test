@@ -1,10 +1,10 @@
 <script>
-import { VegaColorPicker, VegaFlex } from '@heartlandone/vega-vue'
+import { VegaColorPicker, VegaFlex } from "@heartlandone/vega-vue"
 
 export default {
   data() {
     return {
-      color: '#CCCCCC'
+      color: "#CCCCCC"
     }
   },
   components: { VegaColorPicker, VegaFlex },

@@ -1,5 +1,5 @@
 <script>
-import { VegaChip } from '@heartlandone/vega-vue'
+import { VegaChip } from "@heartlandone/vega-vue"
 
 export default {
   data() {
@@ -9,5 +9,9 @@ export default {
 }
 </script>
 <template>
-  <VegaChip text="Chip" chip-type="status" status-color="bg-status-success" />
+  <VegaChip
+    text="Chip"
+    chip-type="status"
+    status-color="bg-status-success"
+  />
 </template>

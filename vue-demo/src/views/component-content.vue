@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'ComponentContent',
+  name: "ComponentContent",
   props: {
     title: String
   }

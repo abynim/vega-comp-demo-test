@@ -1,6 +1,6 @@
 <script>
 export default {
-  name: 'ComponentSubContent',
+  name: "ComponentSubContent",
   props: {
     subTitle: String,
     background: Boolean
@@ -15,7 +15,10 @@ export default {
     </div>
     <div class="v-mb-size-32">
       <div :class="background ? `v-bg-backdrop-popover v-p-size-24 v-rounded-12` : `v-px-size-12`">
-        <div v-if="background" class="v-bg-primary v-p-size-24 v-rounded-12">
+        <div
+          v-if="background"
+          class="v-bg-primary v-p-size-24 v-rounded-12"
+        >
           <slot />
         </div>
         <div v-else><slot /></div>

@@ -1,5 +1,5 @@
 <script>
-import { VegaButton } from '@heartlandone/vega-vue'
+import { VegaButton } from "@heartlandone/vega-vue"
 
 export default {
   data() {

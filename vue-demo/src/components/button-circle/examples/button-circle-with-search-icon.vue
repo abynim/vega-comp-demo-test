@@ -1,5 +1,5 @@
 <script>
-import { VegaButtonCircle } from '@heartlandone/vega-vue'
+import { VegaButtonCircle } from "@heartlandone/vega-vue"
 export default {
   data() {
     return {}
