@@ -1,0 +1,32 @@
+<script>
+import { VegaFlex } from "@heartlandone/vega-vue"
+
+export default {
+  data() {
+    return {}
+  },
+  components: { VegaFlex }
+}
+</script>
+<template>
+  <VegaFlex
+    align-item="center"
+    justify-content="space-between"
+  >
+    <div
+      class="v-bg-action v-font-p2-short v-text-inverted-primary v-h-size-112 v-w-size-80 v-min-w-min vega-flex-shrink-0"
+    >
+      Child 1
+    </div>
+    <div
+      class="v-bg-action v-font-p2-short v-text-inverted-primary v-h-size-112 v-w-size-80 v-min-w-min vega-flex-shrink-0"
+    >
+      Child 2
+    </div>
+    <div
+      class="v-bg-action v-font-p2-short v-text-inverted-primary v-h-size-48 v-w-size-80 v-min-w-min vega-flex-shrink-0"
+    >
+      Child 3
+    </div>
+  </VegaFlex>
+</template>

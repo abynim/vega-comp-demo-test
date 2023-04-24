@@ -34,16 +34,21 @@ export default {
         { ref: "pagination", title: "Pagination" },
         { ref: "progress-tracker", title: "Progress Tracker" },
         { ref: "popover", title: "Popover" },
-        { ref: "radio-button", title: "Radio Button" },
-        { ref: "select", title: "Select" },
-        { ref: "sidebar-navigation", title: "Sidebar Navigation" },
+        { ref: "radio", title: "Radio Button" },
+        { ref: "input-select", title: "Input Select" },
+        { ref: "sidenav", title: "Sidebar Navigation" },
         { ref: "stepper", title: "Stepper" },
         { ref: "tab-group", title: "Tab Group" },
         { ref: "table", title: "Table" },
-        { ref: "text-area", title: "Text Area" },
+        { ref: "textarea", title: "Text Area" },
         { ref: "time-picker", title: "Time Picker" },
         { ref: "toggle-switch", title: "Toggle Switch" },
-        { ref: "tooltip", title: "Tooltip" }
+        { ref: "tooltip", title: "Tooltip" },
+        { ref: "box", title: "Box" },
+        { ref: "card", title: "Card" },
+        { ref: "flex", title: "Flex" },
+        { ref: "grid", title: "Grid" },
+        { ref: "form", title: "Form" }
       ]
     }
   },

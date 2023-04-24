@@ -64,6 +64,81 @@ import InputCreditCard from "../components/input-credit-card/examples/input-cred
 
 import ItemToggle from "../components/item-toggle/examples/item-toggle.vue"
 
+import Modal from "../components/modal/examples/modal.vue"
+
+import LoadingIndicator from "../components/loading-indicator/examples/loading-indicator.vue"
+import LoadingIndicatorBar from "../components/loading-indicator/examples/loading-indicator-bar.vue"
+import LoadingIndicatorCircleDeterminate from "../components/loading-indicator/examples/loading-indicator-circle-determinate.vue"
+import LoadingIndicatorBarDeterminate from "../components/loading-indicator/examples/loading-indicator-bar-determinate.vue"
+import LoadingIndicatorCircleDeterminateSuccess from "../components/loading-indicator/examples/loading-indicator-circle-determinate-success.vue"
+import LoadingIndicatorCircleDeterminateError from "../components/loading-indicator/examples/loading-indicator-circle-determinate-error.vue"
+
+import PageNotification from "../components/page-notification/examples/page-notification.vue"
+import PageNotificationWithActions from "../components/page-notification/examples/page-notification-with-actions.vue"
+import PageNotificationTypes from "../components/page-notification/examples/page-notification-types.vue"
+
+import Pagination from "../components/pagination/examples/pagination.vue"
+import PaginationWithNumberOfPagesViewed from "../components/pagination/examples/pagination-with-number-of-pages-viewed.vue"
+import PaginationWithVariableItemNumberDisplay from "../components/pagination/examples/pagination-with-variable-item-number-display.vue"
+import PaginationCombinedExample from "../components/pagination/examples/pagination-combined-example.vue"
+import PaginationWithOrdering from "../components/pagination/examples/pagination-with-ordering.vue"
+
+import ProgressTracker from "../components/progress-tracker/examples/progress-tracker.vue"
+import ProgressTrackerHorizontal from "../components/progress-tracker/examples/progress-tracker-horizontal.vue"
+
+import Popover from "../components/popover/examples/popover.vue"
+
+import Radio from "../components/radio/examples/radio.vue"
+
+import InputSelect from "../components/input-select/examples/input-select.vue"
+import InputSelectSmall from "../components/input-select/examples/input-select-small.vue"
+
+import Sidenav from "../components/sidenav/examples/sidenav.vue"
+
+import Stepper from "../components/stepper/examples/stepper.vue"
+
+import TabGroup from "../components/tab-group/examples/tab-group.vue"
+import TabGroupWithCloseButtons from "../components/tab-group/examples/tab-group-with-close-buttons.vue"
+import TabGroupWithOverflowTabs from "../components/tab-group/examples/tab-group-with-overflow-tabs.vue"
+
+import TableBasic from "../components/table/examples/table.vue"
+import TableWithCustomColumns from "../components/table/examples/table-custom-columns.vue"
+import TableWithSelection from "../components/table/examples/table-with-selection.vue"
+import TableWithSorting from "../components/table/examples/table-with-sorting.vue"
+import TableWithExpandableRow from "../components/table/examples/table-with-expandable-row.vue"
+import TableWithClickableRow from "../components/table/examples/table-with-clickable-row.vue"
+import TableOverflowColumnsWithEllipsis from "../components/table/examples/table-overflow-columns-with-ellipsis.vue"
+import TableWithPaginationAndDividers from "../components/table/examples/table-with-pagination-and-dividers.vue"
+import TableDensityDefault from "../components/table/examples/table-density-default.vue"
+import TableDensityCompact from "../components/table/examples/table-density-compact.vue"
+import TableDensityRelaxed from "../components/table/examples/table-density-relaxed.vue"
+import TableDensityResponsive from "../components/table/examples/table-density-responsive.vue"
+import TableWithHorizontalPadding from "../components/table/examples/table-with-horizontal-padding.vue"
+import TableEditable from "../components/table/examples/table-editable.vue"
+import TableEditableComplex from "../components/table/examples/table-editable-complex.vue"
+
+import TextareaBasic from "../components/textarea/examples/textarea.vue"
+
+import TimePicker from "../components/time-picker/examples/time-picker.vue"
+import TimePicker24Hour from "../components/time-picker/examples/time-picker-24-hour.vue"
+
+import ToggleSwitch from "../components/toggle-switch/examples/toggle-switch.vue"
+
+import Tooltip from "../components/tooltip/examples/tooltip.vue"
+
+import Box from "../components/box/examples/box.vue"
+import Card from "../components/card/examples/card.vue"
+
+import Flex from "../components/flex/examples/flex.vue"
+import FlexWithDifferentWidth from "../components/flex/examples/flex-with-different-width.vue"
+import FlexCombination from "../components/flex/examples/flex-combination.vue"
+import FlexAlignAndJustify from "../components/flex/examples/flex-align-and-justify.vue"
+
+import Grid from "../components/grid/examples/grid.vue"
+import GridWithDifferentSizes from "../components/grid/examples/grid-with-different-sizes.vue"
+
+import Form from "../components/form/examples/form.vue"
+
 export default {
   name: "VegaComponents",
   props: {
@@ -116,7 +191,62 @@ export default {
     ImageUploader,
     InputField,
     InputCreditCard,
-    ItemToggle
+    ItemToggle,
+    Modal,
+    LoadingIndicator,
+    LoadingIndicatorBar,
+    LoadingIndicatorCircleDeterminate,
+    LoadingIndicatorBarDeterminate,
+    LoadingIndicatorCircleDeterminateSuccess,
+    LoadingIndicatorCircleDeterminateError,
+    PageNotification,
+    PageNotificationWithActions,
+    PageNotificationTypes,
+    Pagination,
+    PaginationWithNumberOfPagesViewed,
+    PaginationWithVariableItemNumberDisplay,
+    PaginationCombinedExample,
+    PaginationWithOrdering,
+    ProgressTracker,
+    ProgressTrackerHorizontal,
+    Popover,
+    Radio,
+    InputSelect,
+    InputSelectSmall,
+    Sidenav,
+    Stepper,
+    TabGroup,
+    TabGroupWithCloseButtons,
+    TabGroupWithOverflowTabs,
+    TableBasic,
+    TableWithCustomColumns,
+    TableWithSelection,
+    TableWithSorting,
+    TableWithExpandableRow,
+    TableWithClickableRow,
+    TableOverflowColumnsWithEllipsis,
+    TableWithPaginationAndDividers,
+    TableDensityDefault,
+    TableDensityCompact,
+    TableDensityRelaxed,
+    TableDensityResponsive,
+    TableWithHorizontalPadding,
+    TableEditable,
+    TableEditableComplex,
+    TextareaBasic,
+    TimePicker,
+    TimePicker24Hour,
+    ToggleSwitch,
+    Tooltip,
+    Box,
+    Card,
+    Flex,
+    FlexWithDifferentWidth,
+    FlexCombination,
+    FlexAlignAndJustify,
+    Grid,
+    GridWithDifferentSizes,
+    Form
   },
   methods: {},
   mounted() {},
@@ -452,6 +582,411 @@ export default {
           :background="true"
         >
           <ItemToggle />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'modal'">
+      <ComponentContent title="Modal">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Modal />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'loading-indicator'">
+      <ComponentContent title="Loading Indicator">
+        <ComponentSubContent
+          subTitle="Indeterminate Examples"
+          :background="true"
+        >
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Circle</div>
+            <LoadingIndicator />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Bar</div>
+            <LoadingIndicatorBar />
+          </div>
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Indeterminate Examples"
+          :background="true"
+        >
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Circle</div>
+            <LoadingIndicatorCircleDeterminate />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Bar</div>
+            <LoadingIndicatorBarDeterminate />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Success</div>
+            <LoadingIndicatorCircleDeterminateSuccess />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Error</div>
+            <LoadingIndicatorCircleDeterminateError />
+          </div>
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'page-notification'">
+      <ComponentContent title="PageNotification">
+        <ComponentSubContent
+          subTitle="With Titles"
+          :background="true"
+        >
+          <PageNotification />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="With Actions"
+          :background="true"
+        >
+          <PageNotificationWithActions />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Notification Types"
+          :background="true"
+        >
+          <PageNotificationTypes />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'pagination'">
+      <ComponentContent title="Pagination">
+        <ComponentSubContent
+          subTitle="Simple Pagination"
+          :background="true"
+        >
+          <Pagination />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with number of pages viewed"
+          :background="true"
+        >
+          <PaginationWithNumberOfPagesViewed />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with variable item number display"
+          :background="true"
+        >
+          <PaginationWithVariableItemNumberDisplay />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Combined Example"
+          :background="true"
+        >
+          <PaginationCombinedExample />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with ordering"
+          :background="true"
+        >
+          <PaginationWithOrdering />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'progress-tracker'">
+      <ComponentContent title="Progress Tracker">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <ProgressTracker />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Horizontal Example"
+          :background="true"
+        >
+          <ProgressTrackerHorizontal />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'popover'">
+      <ComponentContent title="Popover">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Popover />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'radio'">
+      <ComponentContent title="Radio Button">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Radio />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'input-select'">
+      <ComponentContent title="Input Select">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <InputSelect />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Small Example"
+          :background="true"
+        >
+          <InputSelectSmall />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'sidenav'">
+      <ComponentContent title="Sidebar Navigation">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Sidenav />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'stepper'">
+      <ComponentContent title="Stepper">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Stepper />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'tab-group'">
+      <ComponentContent title="Tab Group">
+        <ComponentSubContent
+          subTitle="Basic Example"
+          :background="true"
+        >
+          <TabGroup />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with Close Buttons"
+          :background="true"
+        >
+          <TabGroupWithCloseButtons />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with overflow tabs"
+          :background="true"
+        >
+          <TabGroupWithOverflowTabs />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'table'">
+      <ComponentContent title="Table">
+        <ComponentSubContent
+          subTitle="Basic Example"
+          :background="true"
+        >
+          <TableBasic />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with Custom Columns"
+          :background="true"
+        >
+          <TableWithCustomColumns />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with Selection"
+          :background="true"
+        >
+          <TableWithSelection />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with Sorting"
+          :background="true"
+        >
+          <TableWithSorting />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Expandable Row Example"
+          :background="true"
+        >
+          <TableWithExpandableRow />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Clickable Row Example"
+          :background="true"
+        >
+          <TableWithClickableRow />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Overflow columns with Ellipsis"
+          :background="true"
+        >
+          <TableOverflowColumnsWithEllipsis />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with Pagination and Dividers"
+          :background="true"
+        >
+          <TableWithPaginationAndDividers />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Density Examples"
+          :background="true"
+        >
+          <div className="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <TableDensityDefault />
+          </div>
+          <div className="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <TableDensityCompact />
+          </div>
+          <div className="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <TableDensityRelaxed />
+          </div>
+          <div className="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <TableDensityResponsive />
+          </div>
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Horizontal Padding Example"
+          :background="true"
+        >
+          <TableWithHorizontalPadding />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Basic Editable Table Example"
+          :background="true"
+        >
+          <TableEditable />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Complex Editable Table Example"
+          :background="true"
+        >
+          <TableEditableComplex />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'textarea'">
+      <ComponentContent title="Text Area">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <TextareaBasic />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'time-picker'">
+      <ComponentContent title="Time Picker">
+        <ComponentSubContent
+          subTitle="12-hour Example"
+          :background="true"
+        >
+          <TimePicker />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="24-hour Example"
+          :background="true"
+        >
+          <TimePicker24Hour />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'toggle-switch'">
+      <ComponentContent title="Toggle Switch">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <ToggleSwitch />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'tooltip'">
+      <ComponentContent title="Tooltip">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Tooltip />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'box'">
+      <ComponentContent title="Box">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Box />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'card'">
+      <ComponentContent title="Card">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Card />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'flex'">
+      <ComponentContent title="Flex">
+        <ComponentSubContent
+          subTitle="Child Items with the same width"
+          :background="true"
+        >
+          <Flex />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Child Items with a different width"
+          :background="true"
+        >
+          <FlexWithDifferentWidth />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Combination"
+          :background="true"
+        >
+          <FlexCombination />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Align and Justify"
+          :background="true"
+        >
+          <FlexAlignAndJustify />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'grid'">
+      <ComponentContent title="Grid">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Grid />
+        </ComponentSubContent>
+        <ComponentSubContent
+          subTitle="Example with different sizes"
+          :background="true"
+        >
+          <GridWithDifferentSizes />
+        </ComponentSubContent>
+      </ComponentContent>
+    </div>
+    <div v-if="activeComponent == 'form'">
+      <ComponentContent title="Form">
+        <ComponentSubContent
+          subTitle="Example"
+          :background="true"
+        >
+          <Form />
         </ComponentSubContent>
       </ComponentContent>
     </div>
