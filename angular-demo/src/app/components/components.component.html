@@ -1,0 +1,80 @@
+<main>
+  <div *ngIf="activeComponent === 'accordion'">
+    <div>
+      <app-component-content title="Accordion">
+        <app-component-sub-content subTitle="Example with chevron on left">
+          <app-accordion></app-accordion>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with chevron on right">
+          <app-accordion-with-right-chevron></app-accordion-with-right-chevron>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'app-footer'">
+    <div>
+      <app-component-content title="App Footer">
+        <app-component-sub-content subTitle="Standard App Footer">
+          <app-app-footer></app-app-footer>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="App Footer with Additional Links">
+          <app-app-footer-with-additional-links></app-app-footer-with-additional-links>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'badge'">
+    <div>
+      <app-component-content title="Badge">
+        <app-component-sub-content subTitle="Example">
+          <app-badge></app-badge>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'banner'">
+    <div>
+      <app-component-content title="Banner">
+        <app-component-sub-content subTitle="Example">
+          <app-banner></app-banner>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'button'">
+    <div>
+      <app-component-content title="Button">
+        <app-component-sub-content subTitle="Primary variant">
+          <app-button></app-button>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Primary variant with icon">
+          <app-button-with-icon></app-button-with-icon>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Secondary Variant">
+          <app-button-secondary-variant></app-button-secondary-variant>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Small Button">
+          <app-button-small></app-button-small>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Large Button">
+          <app-button-large></app-button-large>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'button-circle'">
+    <div>
+      <app-component-content title="Button Circle">
+        <app-component-sub-content subTitle="Example">
+          <app-button-circle></app-button-circle>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Search Button">
+          <app-button-circle-with-search-icon></app-button-circle-with-search-icon>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Dabger Button">
+          <app-button-circle-danger></app-button-circle-danger>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+</main>

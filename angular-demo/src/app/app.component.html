@@ -1,0 +1,35 @@
+<vega-grid
+  column="4"
+  row="1"
+  gap="size-0"
+>
+  <div class="v-bg-page">
+    <vega-card
+      padding="size-0"
+      background-color="bg-page"
+      class="sidebar"
+    >
+      <div class="v-font-h3 v-text-primary v-py-size-12 v-px-size-32 header v-border-input-field">
+        Components
+      </div>
+      <nav>
+        <ul class="v-px-size-32 v-py-size-12">
+          <li *ngFor="let link of links">
+            <a
+              [routerLink]="['components', link.ref]"
+              class="v-font-field-label-em v-text-primary"
+              [routerLinkActive]="['v-bg-action', 'v-text-white']"
+              >{{ link.title }}</a
+            >
+          </li>
+        </ul>
+      </nav>
+    </vega-card>
+  </div>
+  <div
+    class="v-p-size-32"
+    style="grid-column: 2 / span 4"
+  >
+    <router-outlet></router-outlet>
+  </div>
+</vega-grid>
