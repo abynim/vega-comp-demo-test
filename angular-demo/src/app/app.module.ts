@@ -22,6 +22,9 @@ import { ButtonLargeComponent } from "../components/button/examples/button-large
 import { ButtonCircleComponent } from "../components/button-circle/examples/button-circle/button-circle.component"
 import { ButtonCircleWithSearchIconComponent } from "../components/button-circle/examples/button-circle-with-search-icon/button-circle-with-search-icon.component"
 import { ButtonCircleDangerComponent } from "../components/button-circle/examples/button-circle-danger/button-circle-danger.component"
+import { ButtonLinkComponent } from "../components/button-link/examples/button-link/button-link.component"
+import { ButtonLinkWithIconComponent } from "../components/button-link/examples/button-link-with-icon/button-link-with-icon.component"
+import { ButtonLinkDangerComponent } from "../components/button-link/examples/button-link-danger/button-link-danger.component"
 
 @NgModule({
   declarations: [
@@ -42,7 +45,10 @@ import { ButtonCircleDangerComponent } from "../components/button-circle/example
     ButtonLargeComponent,
     ButtonCircleComponent,
     ButtonCircleWithSearchIconComponent,
-    ButtonCircleDangerComponent
+    ButtonCircleDangerComponent,
+    ButtonLinkComponent,
+    ButtonLinkWithIconComponent,
+    ButtonLinkDangerComponent
   ],
   imports: [BrowserModule, AppRoutingModule, VegaComponentModule, FormsModule, ReactiveFormsModule],
   providers: [],

@@ -77,4 +77,19 @@
       </app-component-content>
     </div>
   </div>
+  <div *ngIf="activeComponent === 'button-link'">
+    <div>
+      <app-component-content title="ButtonLink">
+        <app-component-sub-content subTitle="Basic Link">
+          <app-button-link></app-button-link>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Link with icon">
+          <app-button-link-with-icon></app-button-link-with-icon>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Link with icon">
+          <app-button-link-danger></app-button-link-danger>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
 </main>
