@@ -6,5 +6,7 @@ import { Component } from "@angular/core"
   styleUrls: ["./button-circle-danger.component.scss"]
 })
 export class ButtonCircleDangerComponent {
-  onClick(e: Event) {}
+  onClick(e: Event) {
+    const button: HTMLVegaButtonCircleElement = e.target as HTMLVegaButtonCircleElement
+  }
 }

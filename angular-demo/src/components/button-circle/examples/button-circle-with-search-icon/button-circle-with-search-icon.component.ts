@@ -6,5 +6,7 @@ import { Component } from "@angular/core"
   styleUrls: ["./button-circle-with-search-icon.component.scss"]
 })
 export class ButtonCircleWithSearchIconComponent {
-  onClick(e: Event) {}
+  onClick(e: Event) {
+    const button: HTMLVegaButtonCircleElement = e.target as HTMLVegaButtonCircleElement
+  }
 }

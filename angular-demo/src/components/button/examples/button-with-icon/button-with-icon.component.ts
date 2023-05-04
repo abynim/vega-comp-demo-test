@@ -6,5 +6,7 @@ import { Component } from "@angular/core"
   styleUrls: ["./button-with-icon.component.scss"]
 })
 export class ButtonWithIconComponent {
-  onClick(e: Event) {}
+  onClick(e: Event) {
+    const button: HTMLVegaButtonElement = e.target as HTMLVegaButtonElement
+  }
 }

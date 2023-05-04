@@ -6,5 +6,7 @@ import { Component } from "@angular/core"
   styleUrls: ["./button-secondary-variant.component.scss"]
 })
 export class ButtonSecondaryVariantComponent {
-  onClick(e: Event) {}
+  onClick(e: Event) {
+    const button: HTMLVegaButtonElement = e.target as HTMLVegaButtonElement
+  }
 }

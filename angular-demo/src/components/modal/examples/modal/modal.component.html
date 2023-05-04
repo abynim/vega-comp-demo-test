@@ -1,0 +1,16 @@
+<vega-flex direction="col">
+  <vega-modal
+    [size]="400"
+    backdrop="static"
+    [open]="isOpen"
+    (vegaClose)="closeModal($event)"
+  >
+    <p class="v-font-p2-short v-text-primary v-mb-size-24">
+      This content will appear in the modal.
+    </p>
+    <div>
+      <vega-button (vegaClick)="closeModal($event)">Close</vega-button>
+    </div>
+  </vega-modal>
+  <vega-button (vegaClick)="openModal($event)">Launch modal</vega-button>
+</vega-flex>

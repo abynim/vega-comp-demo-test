@@ -1,0 +1,33 @@
+<vega-flex
+  gap="size-16"
+  [direction]="{ default: 'row', S: 'col', M: 'row' }"
+>
+  <vega-button
+    id="warning"
+    (vegaClick)="openNotify($event)"
+    variant="secondary"
+  >
+    Warning
+  </vega-button>
+  <vega-button
+    id="success"
+    variant="secondary"
+    (vegaClick)="openNotify($event)"
+  >
+    Success
+  </vega-button>
+  <vega-button
+    id="error"
+    variant="secondary"
+    (vegaClick)="openNotify($event)"
+  >
+    Error
+  </vega-button>
+  <vega-button
+    id="info"
+    variant="secondary"
+    (vegaClick)="openNotify($event)"
+  >
+    Info
+  </vega-button>
+</vega-flex>

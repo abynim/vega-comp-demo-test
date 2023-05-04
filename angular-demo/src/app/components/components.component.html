@@ -92,4 +92,380 @@
       </app-component-content>
     </div>
   </div>
+  <div *ngIf="activeComponent === 'carousel'">
+    <div>
+      <app-component-content title="Carousel">
+        <app-component-sub-content subTitle="Example">
+          <app-carousel></app-carousel>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with button controls">
+          <app-carousel-with-button-controls></app-carousel-with-button-controls>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'checkbox'">
+    <div>
+      <app-component-content title="Checkbox">
+        <app-component-sub-content subTitle="Single Checkbox">
+          <app-single-checkbox></app-single-checkbox>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Checkbox Group">
+          <app-checkbox-group></app-checkbox-group>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'chip'">
+    <div>
+      <app-component-content title="Chip">
+        <app-component-sub-content subTitle="Example">
+          <app-chip></app-chip>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Border and Responsive Size">
+          <app-chip-with-border-and-responsive-size></app-chip-with-border-and-responsive-size>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Status Example">
+          <app-chip-status></app-chip-status>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'color-picker'">
+    <div>
+      <app-component-content title="Color Picker">
+        <app-component-sub-content subTitle="Example">
+          <app-color-picker></app-color-picker>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with new color array">
+          <app-color-picker-with-color-array></app-color-picker-with-color-array>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'combo-box'">
+    <div>
+      <app-component-content title="Combo Box">
+        <app-component-sub-content subTitle="Example">
+          <app-combo-box></app-combo-box>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with createable options">
+          <app-combo-box-with-creatable-options></app-combo-box-with-creatable-options>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'counter-badge'">
+    <div>
+      <app-component-content title="Counter Badge">
+        <app-component-sub-content subTitle="Example">
+          <app-counter-badge></app-counter-badge>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example using Dot">
+          <app-counter-badge-with-dot></app-counter-badge-with-dot>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'date-picker'">
+    <div>
+      <app-component-content title="Counter Badge">
+        <app-component-sub-content subTitle="Example">
+          <app-date-picker></app-date-picker>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Range Example">
+          <app-date-picker-with-range></app-date-picker-with-range>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Range with Min and Max Date">
+          <app-date-picker-with-range-with-min-max-date></app-date-picker-with-range-with-min-max-date>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'dropdown'">
+    <div>
+      <app-component-content title="Dropdown Menu">
+        <app-component-sub-content subTitle="Example with linkable menu">
+          <app-dropdown></app-dropdown>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with dynamic searchable menu">
+          <app-dropdown-with-dynamic-searchable-menu></app-dropdown-with-dynamic-searchable-menu>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'icon'">
+    <div>
+      <app-component-content title="Icon">
+        <app-component-sub-content subTitle="Example">
+          <app-icon></app-icon>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'image-uploader'">
+    <div>
+      <app-component-content title="Image Uploader">
+        <app-component-sub-content subTitle="Example">
+          <app-image-uploader></app-image-uploader>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'input'">
+    <div>
+      <app-component-content title="Input">
+        <app-component-sub-content subTitle="Example">
+          <app-input></app-input>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'input-credit-card'">
+    <div>
+      <app-component-content title="Input Credit Card">
+        <app-component-sub-content subTitle="Example">
+          <app-input-credit-card></app-input-credit-card>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'item-toggle'">
+    <div>
+      <app-component-content title="Item Toggle">
+        <app-component-sub-content subTitle="Example">
+          <app-item-toggle></app-item-toggle>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'modal'">
+    <div>
+      <app-component-content title="Modal">
+        <app-component-sub-content subTitle="Example">
+          <app-modal></app-modal>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'loading-indicator'">
+    <div>
+      <app-component-content title="Loading Indicator">
+        <app-component-sub-content subTitle="Indeterminate Examples">
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Circle</div>
+            <app-loading-indicator></app-loading-indicator>
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Bar</div>
+            <app-loading-indicator-bar></app-loading-indicator-bar>
+          </div>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Indeterminate Examples">
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Circle</div>
+            <app-loading-indicator-circle-determinate></app-loading-indicator-circle-determinate>
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Bar</div>
+            <app-loading-indicator-bar-determinate></app-loading-indicator-bar-determinate>
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Success</div>
+            <app-loading-indicator-circle-determinate-success></app-loading-indicator-circle-determinate-success>
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <div class="v-font-field-label-sm-em v-mb-size-12 v-text-primary">Error</div>
+            <app-loading-indicator-circle-determinate-error></app-loading-indicator-circle-determinate-error>
+          </div>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'page-notification'">
+    <div>
+      <app-component-content title="PageNotification">
+        <app-component-sub-content subTitle="With Titles">
+          <app-page-notification></app-page-notification>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="With Actions">
+          <app-page-notification-with-actions></app-page-notification-with-actions>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Notification Types">
+          <app-page-notification-types></app-page-notification-types>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'progress-tracker'">
+    <div>
+      <app-component-content title="Progress Tracker">
+        <app-component-sub-content subTitle="Example">
+          <app-progress-tracker></app-progress-tracker>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Horizontal Example">
+          <app-progress-tracker-horizontal></app-progress-tracker-horizontal>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'popover'">
+    <div>
+      <app-component-content title="Popover">
+        <app-component-sub-content subTitle="Example">
+          <app-popover></app-popover>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'radio'">
+    <div>
+      <app-component-content title="Radio Button">
+        <app-component-sub-content subTitle="Example">
+          <app-radio></app-radio>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'input-select'">
+    <div>
+      <app-component-content title="Input Select">
+        <app-component-sub-content subTitle="Example">
+          <app-input-select></app-input-select>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Small Example">
+          <app-input-select-small></app-input-select-small>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'sidenav'">
+    <div>
+      <app-component-content title="Sidebar Navigation">
+        <app-component-sub-content subTitle="Example">
+          <app-sidenav></app-sidenav>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'stepper'">
+    <div>
+      <app-component-content title="Stepper">
+        <app-component-sub-content subTitle="Example">
+          <app-stepper></app-stepper>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'tab-group'">
+    <div>
+      <app-component-content title="Tab Group">
+        <app-component-sub-content subTitle="Basic Example">
+          <app-tab-group></app-tab-group>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Close Buttons">
+          <app-tab-group-with-close-buttons></app-tab-group-with-close-buttons>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with overflow tabs">
+          <app-tab-group-with-overflow-tabs></app-tab-group-with-overflow-tabs>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'textarea'">
+    <div>
+      <app-component-content title="Text Area">
+        <app-component-sub-content subTitle="Basic Example">
+          <app-textarea></app-textarea>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'time-picker'">
+    <div>
+      <app-component-content title="Time Picker">
+        <app-component-sub-content subTitle="12-hour Example">
+          <app-time-picker></app-time-picker>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="24-hour Example">
+          <app-time-picker-24-hour></app-time-picker-24-hour>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'toggle-switch'">
+    <div>
+      <app-component-content title="Toggle Switch">
+        <app-component-sub-content subTitle="Example">
+          <app-toggle-switch></app-toggle-switch>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'tooltip'">
+    <div>
+      <app-component-content title="Tooltip">
+        <app-component-sub-content subTitle="Example">
+          <app-tooltip></app-tooltip>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'box'">
+    <div>
+      <app-component-content title="Box">
+        <app-component-sub-content subTitle="Example">
+          <app-box></app-box>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'card'">
+    <div>
+      <app-component-content title="Card">
+        <app-component-sub-content subTitle="Example">
+          <app-card></app-card>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'flex'">
+    <div>
+      <app-component-content title="Flex">
+        <app-component-sub-content subTitle="Child Items with the same width">
+          <app-flex></app-flex>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Child Items with a different width">
+          <app-flex-with-different-width></app-flex-with-different-width>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Combination">
+          <app-flex-combination></app-flex-combination>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Align and Justify">
+          <app-flex-align-and-justify></app-flex-align-and-justify>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'grid'">
+    <div>
+      <app-component-content title="Grid">
+        <app-component-sub-content subTitle="Example">
+          <app-grid></app-grid>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with different sizes">
+          <app-grid-with-different-sizes></app-grid-with-different-sizes>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'form'">
+    <div>
+      <app-component-content title="Form">
+        <app-component-sub-content subTitle="Example">
+          <app-form></app-form>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
 </main>

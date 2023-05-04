@@ -1,0 +1,11 @@
+<vega-dropdown
+  ngModel
+  #dropdown
+  [source]="objectValues(sourceMap)"
+  (vegaDropdownClick)="onLinkClick($event)"
+  [searchable]="true"
+  [dynamicOption]="true"
+  (vegaCreate)="onCreate($event)"
+>
+  <vega-button icon="hb-menu">Menu</vega-button>
+</vega-dropdown>

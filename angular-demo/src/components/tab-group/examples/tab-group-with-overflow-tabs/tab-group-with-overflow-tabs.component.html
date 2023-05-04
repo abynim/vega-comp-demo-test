@@ -1,0 +1,43 @@
+<vega-flex
+  direction="col"
+  class="example-container"
+>
+  <vega-tab-group
+    gap="size-8"
+    [showCloseButton]="true"
+    [tabItems]="[
+      { label: 'Home', dataTarget: 'nav-home', prefixIcon: 'home' },
+      { label: 'Profile', dataTarget: 'nav-profile' },
+      { label: 'Contact', dataTarget: 'nav-contact' },
+      { label: 'Contact2', dataTarget: 'nav-contact4' },
+      { label: 'Contact3', dataTarget: 'nav-contact5' },
+      { label: 'Contact4', dataTarget: 'nav-contact6' },
+      { label: 'Contact5', dataTarget: 'nav-contact7' },
+      { label: 'Contact6', dataTarget: 'nav-contact8' },
+      { label: 'Contact7', dataTarget: 'nav-contact9' },
+      { label: 'Contact8', dataTarget: 'nav-contact10' }
+    ]"
+    (vegaClick)="onTabClick($event)"
+    class="v-w-full"
+    position-relative-to=".example-container"
+  >
+    <vega-tab-group-panel
+      id="nav-home"
+      class="v-py-size-24"
+    >
+      <div class="v-font-p2-short v-text-primary">This is the Home tab</div>
+    </vega-tab-group-panel>
+    <vega-tab-group-panel
+      id="nav-profile"
+      class="v-py-size-24"
+    >
+      <div class="v-font-p2-short v-text-primary">Profile tab</div>
+    </vega-tab-group-panel>
+    <vega-tab-group-panel
+      id="nav-contact"
+      class="v-py-size-24"
+    >
+      <div class="v-font-p2-short v-text-primary">Contact tab</div>
+    </vega-tab-group-panel>
+  </vega-tab-group>
+</vega-flex>

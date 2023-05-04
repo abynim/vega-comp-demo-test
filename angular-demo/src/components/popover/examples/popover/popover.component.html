@@ -1,0 +1,20 @@
+<vega-flex
+  id="container"
+  direction="col"
+>
+  <vega-popover
+    [size]="200"
+    placement="left"
+    alignment="start"
+    positionRelativeTo="#container"
+  >
+    <vega-button slot="popover-content">Click Me</vega-button>
+    <div
+      slot="popover"
+      className="v-font-p2-short v-text-primary"
+    >
+      I am a popover
+      <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    </div>
+  </vega-popover>
+</vega-flex>

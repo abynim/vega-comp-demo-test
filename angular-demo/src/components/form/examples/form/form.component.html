@@ -1,0 +1,34 @@
+<vega-form
+  ngModel
+  #form
+  data-vega-form="form"
+>
+  <vega-flex
+    direction="col"
+    class="v-mb-size-12"
+  >
+    <vega-input
+      data-vega-form="input"
+      [min]="6"
+      [value]="3"
+      label="Min value is 6"
+    ></vega-input>
+
+    <vega-form data-vega-form="nestedForm">
+      <vega-input
+        data-vega-form="nestedInput"
+        [max]="12"
+        [value]="15"
+        label="This is a nested form input"
+      ></vega-input>
+    </vega-form>
+  </vega-flex>
+  <vega-flex
+    direction="row"
+    gap="size-24"
+  >
+    <vega-button (vegaClick)="getValue($event)">Get Value</vega-button>
+    <vega-button (vegaClick)="validate($event)">Validate</vega-button>
+    <vega-button (vegaClick)="reset($event)">Reset</vega-button>
+  </vega-flex>
+</vega-form>

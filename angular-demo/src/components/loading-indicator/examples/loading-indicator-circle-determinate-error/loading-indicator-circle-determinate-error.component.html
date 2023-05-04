@@ -1,0 +1,21 @@
+<vega-flex direction="col">
+  <vega-loading-indicator
+    ngModel
+    #errorLoader
+    ngDefaultControl
+    mode="determinate"
+    [percent]="percentage"
+    size="large"
+  />
+  <vega-flex gap="size-12">
+    <vega-icon
+      icon="far fa-rotate-right"
+      (click)="simulatePercentage()"
+    />
+    <span
+      (click)="simulatePercentage()"
+      class="v-text-primary"
+      >Refresh</span
+    >
+  </vega-flex>
+</vega-flex>
