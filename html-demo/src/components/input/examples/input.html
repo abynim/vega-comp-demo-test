@@ -1,0 +1,20 @@
+<vega-input
+  id="input-id"
+  name="input-name"
+  label="Phone number"
+  value="(555) 555-5555"
+  autocomplete="off"
+  prefix-icon="mobile-phone"
+  required="true"
+  max-length="14"
+  auto-validation="true"
+  validation-rules="object"
+  hint="Enter your telephone number"
+  show-clear-icon="true"
+>
+</vega-input>
+
+<script>
+  const vegaInput = document.getElementById("input-id")
+  vegaInput.maskConfig = { type: "phone" }
+</script>

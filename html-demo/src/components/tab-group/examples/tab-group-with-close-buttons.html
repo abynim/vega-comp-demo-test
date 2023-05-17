@@ -1,0 +1,18 @@
+<vega-tab-group
+  id="web-tab-group-with-close-button"
+  gap="size-8"
+  show-close-button="true"
+>
+  <vega-tab-group-panel id="nav-home">This is the Home tab</vega-tab-group-panel>
+  <vega-tab-group-panel id="nav-profile">Profile tab</vega-tab-group-panel>
+  <vega-tab-group-panel id="nav-contact">Contact tab</vega-tab-group-panel>
+</vega-tab-group>
+
+<!-- Requires Javascript -->
+<script>
+  document.getElementById("web-tab-group-with-close-button").tabItems = [
+    { label: "Home", dataTarget: "nav-home", prefixIcon: "home" },
+    { label: "Profile", dataTarget: "nav-profile" },
+    { label: "Contact", dataTarget: "nav-contact" }
+  ]
+</script>

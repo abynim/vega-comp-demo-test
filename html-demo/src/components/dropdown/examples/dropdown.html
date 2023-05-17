@@ -1,0 +1,20 @@
+<vega-dropdown
+  id="vega-dropdown"
+  trigger="hover"
+>
+  <vega-button icon="hb-menu">menu</vega-button>
+</vega-dropdown>
+
+<!-- Requires Javascript -->
+<script>
+  const dropdown = document.querySelector("#vega-dropdown")
+  const sourceMap = {
+    google: { label: "Google", key: "google", url: "https://google.com", group: "links" },
+    vega: { label: "Vega", key: "vega", url: "https://vega.hlprd.com/", group: "links" },
+    option3: { label: "Option3", key: "option3", url: "#", group: "options", count: "5" }
+  }
+  dropdown.source = Object.values(sourceMap)
+  dropdown.addEventListener("vegaClick", (e) => {
+    window.open(sourceMap[e.detail].url, "_blank")
+  })
+</script>

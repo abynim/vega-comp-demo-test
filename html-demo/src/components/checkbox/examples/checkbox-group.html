@@ -1,0 +1,25 @@
+<vega-checkbox-group id="vegaCheckboxGroup">
+  <div class="v-mb-xs">
+    <vega-checkbox identifier="apple"> Apple </vega-checkbox>
+  </div>
+  <div class="v-mb-xs">
+    <vega-checkbox identifier="banana"> Banana </vega-checkbox>
+  </div>
+  <div>
+    <vega-checkbox identifier="orange"> Orange </vega-checkbox>
+  </div>
+</vega-checkbox-group>
+
+<!-- Requires Javascript -->
+<script>
+  const checkboxes = document.querySelector("#vegaCheckboxGroup")
+  checkboxes.vegaFlexProp = {
+    gap: "size-8",
+    direction: "col",
+    breakpoint: "None",
+    alignItem: "start",
+    justifyContent: "start",
+    margin: "0"
+  }
+  checkboxes.value = ["apple", "banana"]
+</script>

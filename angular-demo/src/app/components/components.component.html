@@ -71,7 +71,7 @@
         <app-component-sub-content subTitle="Search Button">
           <app-button-circle-with-search-icon></app-button-circle-with-search-icon>
         </app-component-sub-content>
-        <app-component-sub-content subTitle="Dabger Button">
+        <app-component-sub-content subTitle="Danger Button">
           <app-button-circle-danger></app-button-circle-danger>
         </app-component-sub-content>
       </app-component-content>
@@ -79,14 +79,14 @@
   </div>
   <div *ngIf="activeComponent === 'button-link'">
     <div>
-      <app-component-content title="ButtonLink">
+      <app-component-content title="Button Link">
         <app-component-sub-content subTitle="Basic Link">
           <app-button-link></app-button-link>
         </app-component-sub-content>
         <app-component-sub-content subTitle="Link with icon">
           <app-button-link-with-icon></app-button-link-with-icon>
         </app-component-sub-content>
-        <app-component-sub-content subTitle="Link with icon">
+        <app-component-sub-content subTitle="Link Danger">
           <app-button-link-danger></app-button-link-danger>
         </app-component-sub-content>
       </app-component-content>
@@ -297,6 +297,27 @@
       </app-component-content>
     </div>
   </div>
+  <div *ngIf="activeComponent === 'pagination'">
+    <div>
+      <app-component-content title="Pagination">
+        <app-component-sub-content subTitle="Simple Pagination">
+          <app-pagination></app-pagination>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with number of pages viewed">
+          <app-pagination-with-number-of-pages-viewed></app-pagination-with-number-of-pages-viewed>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with variable item number display">
+          <app-pagination-with-variable-item-number-display></app-pagination-with-variable-item-number-display>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Combined Example">
+          <app-pagination-combined-example></app-pagination-combined-example>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with ordering">
+          <app-pagination-with-ordering></app-pagination-with-ordering>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
   <div *ngIf="activeComponent === 'progress-tracker'">
     <div>
       <app-component-content title="Progress Tracker">
@@ -368,6 +389,59 @@
         </app-component-sub-content>
         <app-component-sub-content subTitle="Example with overflow tabs">
           <app-tab-group-with-overflow-tabs></app-tab-group-with-overflow-tabs>
+        </app-component-sub-content>
+      </app-component-content>
+    </div>
+  </div>
+  <div *ngIf="activeComponent === 'table'">
+    <div>
+      <app-component-content title="Table">
+        <app-component-sub-content subTitle="Basic Example">
+          <app-table></app-table>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Custom Columns">
+          <app-table-custom-columns></app-table-custom-columns>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Selection">
+          <app-table-with-selection></app-table-with-selection>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Sorting">
+          <app-table-with-sorting></app-table-with-sorting>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Expandable Row Example">
+          <app-table-with-expandable-row></app-table-with-expandable-row>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Clickable Row Example">
+          <app-table-with-clickable-row></app-table-with-clickable-row>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Overflow columns with Ellipsis">
+          <app-table-overflow-columns-with-ellipsis></app-table-overflow-columns-with-ellipsis>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Example with Pagination and Dividers">
+          <app-table-with-pagination-and-dividers></app-table-with-pagination-and-dividers>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Density Examples">
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <app-table-density-default />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <app-table-density-compact />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <app-table-density-relaxed />
+          </div>
+          <div class="v-mb-size-32 v-border-divider-secondary v-rounded-12 v-p-size-12">
+            <app-table-density-responsive />
+          </div>
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Horizontal Padding Example">
+          <app-table-with-horizontal-padding />
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Basic Editable Table Example">
+          <app-table-editable />
+        </app-component-sub-content>
+        <app-component-sub-content subTitle="Complex Editable Table Example">
+          <app-table-editable-complex />
         </app-component-sub-content>
       </app-component-content>
     </div>

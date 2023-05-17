@@ -1,0 +1,36 @@
+<vega-form data-vega-form="form">
+  <vega-input
+    data-vega-form="input"
+    min="6"
+    value="3"
+    label="Min value is 6"
+  ></vega-input>
+  <vega-form data-vega-form="nestedForm">
+    <vega-input
+      data-vega-form="nestedInput"
+      max="12"
+      value="15"
+      Label="This is a nested form input"
+    ></vega-input>
+  </vega-form>
+  <div class="v-mt-size-12">
+    <vega-button id="getValue">Get Value</vega-button>
+    <vega-button id="valid">Validate</vega-button>
+    <vega-button id="reset">Reset</vega-button>
+  </div>
+</vega-form>
+
+<script>
+  const vegaForm = document.querySelector("vega-form")
+  document.getElementById("getValue").addEventListener("vegaClick", async () => {
+    window.alert(JSON.stringify(await vegaForm.getValue(), null, 2))
+  })
+
+  document.getElementById("reset").addEventListener("vegaClick", () => {
+    vegaForm.reset()
+  })
+
+  document.getElementById("valid").addEventListener("vegaClick", () => {
+    vegaForm.valid()
+  })
+</script>

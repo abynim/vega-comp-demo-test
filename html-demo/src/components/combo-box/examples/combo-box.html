@@ -1,0 +1,16 @@
+<vega-combo-box
+  required="true"
+  label="label text"
+  id="my-combo-box"
+>
+</vega-combo-box>
+
+<!-- Requires Javascript -->
+<script>
+  const comboBox = document.getElementById("my-combo-box")
+  comboBox.source = [
+    { key: "key1", label: "option 1" },
+    { key: "key2", label: "option 2" },
+    { key: "key3", label: "option 3" }
+  ]
+</script>

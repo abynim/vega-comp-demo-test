@@ -1,0 +1,24 @@
+<vega-combo-box
+  required="true"
+  label="label text"
+  id="combo-box-with-createable-options"
+>
+</vega-combo-box>
+
+<!-- Requires Javascript -->
+<script>
+  const comboBoxWithCreatableOptions = document.getElementById("combo-box-with-createable-options")
+  comboBoxWithCreatableOptions.source = [
+    { key: "key1", label: "option 1" },
+    { key: "key2", label: "option 2" },
+    { key: "key3", label: "option 3" }
+  ]
+
+  comboBoxWithCreatableOptions.vegaDropdownProps = {
+    dynamicOption: true
+  }
+  comboBoxWithCreatableOptions.addEventListener("vegaCreate", (e) => {
+    comboBoxWithCreatableOptions.source.push({ key: e.detail, label: e.detail })
+    comboBoxWithCreatableOptions.value = [...comboBoxWithCreatableOptions.value, e.detail]
+  })
+</script>

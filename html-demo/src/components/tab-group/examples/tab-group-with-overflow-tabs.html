@@ -1,0 +1,29 @@
+<div class="example-container">
+  <vega-tab-group
+    id="web-tab-group-with-overflow-tabs"
+    gap="size-8"
+    show-close-button="false"
+    class="v-w-full"
+    position-relative-to=".example-container"
+  >
+    <vega-tab-group-panel id="nav-home">This is the Home tab</vega-tab-group-panel>
+    <vega-tab-group-panel id="nav-profile">Profile tab</vega-tab-group-panel>
+    <vega-tab-group-panel id="nav-contact">Contact tab</vega-tab-group-panel>
+  </vega-tab-group>
+</div>
+
+<!-- Requires Javascript -->
+<script>
+  document.getElementById("web-tab-group-with-overflow-tabs").tabItems = [
+    { label: "Home", dataTarget: "nav-home", prefixIcon: "home" },
+    { label: "Profile", dataTarget: "nav-profile" },
+    { label: "Contact", dataTarget: "nav-contact" },
+    { label: "Contact2", dataTarget: "nav-contact4" },
+    { label: "Contact3", dataTarget: "nav-contact5" },
+    { label: "Contact4", dataTarget: "nav-contact6" },
+    { label: "Contact5", dataTarget: "nav-contact7" },
+    { label: "Contact6", dataTarget: "nav-contact8" },
+    { label: "Contact7", dataTarget: "nav-contact9" },
+    { label: "Contact8", dataTarget: "nav-contact10" }
+  ]
+</script>

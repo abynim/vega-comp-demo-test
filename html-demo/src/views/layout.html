@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <title>HTML Components</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: "Inter", sans-serif;
+    }
+
+    .sidebar {
+      border-radius: 0 !important;
+      min-height: 100vh;
+    }
+
+    .sidebar .header {
+      border-width: 0 !important;
+      border-bottom-width: 1px !important;
+      font-weight: bold;
+    }
+
+    .sidebar ul {
+      margin: 0;
+      list-style-type: none;
+    }
+
+    .sidebar ul li a {
+      text-decoration: none;
+      display: block;
+      padding: 5px 15px;
+      border-radius: 6px;
+    }
+
+    .sidebar ul li a.active {
+      text-decoration: none;
+    }
+
+    .page-content {
+      border-radius: 0 !important;
+    }
+  </style>
+  <script type="module" src="https://unpkg.com/@heartlandone/vega@1.29.0/dist/vega/vega.esm.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/@heartlandone/vega@1.29.0/style/vega.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.10/vue.min.js"></script>
+</head>
+
+<body>
+  <vega-grid column="4" row="1" gap="size-0">
+    <div class="v-bg-page">
+      <vega-card padding="size-0" background-color="bg-page" class="sidebar">
+        <div class="v-font-h3 v-text-primary v-py-size-12 v-px-size-32 header v-border-input-field">
+          Components
+        </div>
+        {% include "views/partials/nav.html" %}
+      </vega-card>
+    </div>
+    <div class="v-p-size-32 v-bg-primary" style="grid-column: 2 / span 4">
+      <div>
+        {% block components %}{% endblock %}
+      </div>
+    </div>
+  </vega-grid>
+</body>
+
+</html>

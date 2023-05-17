@@ -1,0 +1,42 @@
+<vega-flex direction="col">
+  <vega-card>
+    <vega-table
+      id="editableTable"
+      ngModel
+      #table
+      ngDefaultControl
+      [rowClickable]="true"
+      [columns]="columns"
+      [dataSource]="dataSource"
+    />
+    <div class="v-mt-size-12 v-font-p2-short v-text-primary">
+      <vega-button-link
+        size="small"
+        icon="plus-sign"
+        (vegaClick)="onAddNew()"
+      >
+        Add New
+      </vega-button-link>
+    </div>
+  </vega-card>
+  <div class="v-mt-size-12">
+    <vega-flex gap="size-8">
+      <vega-button
+        ngModel
+        #saveButton
+        ngDefaultControl
+        size="small"
+        [disabled]="true"
+        (vegaClick)="onSaveRowData()"
+      >
+        Save
+      </vega-button>
+    </vega-flex>
+  </div>
+  <div class="v-mt-size-8 v-text-primary">
+    <div class="v-font-field-label v-text-success">Saved Data:</div>
+    <div class="v-font-field-label">
+      {{ stringifyEditedData(editedData) }}
+    </div>
+  </div>
+</vega-flex>

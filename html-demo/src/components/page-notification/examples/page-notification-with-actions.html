@@ -1,0 +1,66 @@
+<vega-flex
+  direction="col"
+  gap="size-20"
+  id="basicTemplate"
+  key="{new"
+  Date().getTime()}
+>
+  <div>
+    <vega-flex gap="size-20">
+      <vega-button id="with-action">With action</vega-button>
+      <vega-button
+        id="with-actions"
+        variant="secondary"
+      >
+        With actions
+      </vega-button>
+    </vega-flex>
+  </div>
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  setTimeout(() => {
+    document
+      .querySelector("#basicTemplate #with-action")
+      .addEventListener("vegaClick", async () => {
+        const id = await window.VegaNotify.open({
+          title: "Title",
+          duration: 0,
+          message: "This notification will not be closed, because the duration is set 0",
+          actionButtons: [
+            {
+              label: "Confirm",
+              onVegaClick: () => {
+                window.VegaNotify.close(id)
+              }
+            }
+          ]
+        })
+      })
+
+    document
+      .querySelector("#basicTemplate #with-actions")
+      .addEventListener("vegaClick", async () => {
+        const id = await window.VegaNotify.open({
+          title: "Title",
+          duration: 10000,
+          message: `This notification will close after 10s`,
+          actionButtons: [
+            {
+              label: "Cancel",
+              onVegaClick: () => {
+                window.VegaNotify.close(id)
+              }
+            },
+            {
+              label: "OK",
+              onVegaClick: () => {
+                window.VegaNotify.close(id)
+              }
+            }
+          ]
+        })
+      })
+  }, 100)
+</script>

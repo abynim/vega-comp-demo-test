@@ -1,0 +1,26 @@
+<vega-dropdown
+  id="vega-dropdown-searchable"
+  trigger="hover"
+  searchable="true"
+  dynamic-option="true"
+>
+  <vega-button icon="hb-menu">menu</vega-button>
+</vega-dropdown>
+
+<!-- Requires Javascript -->
+<script>
+  const dropdownSearchable = document.querySelector("#vega-dropdown-searchable")
+  const sourceMapOptions = {
+    google: { label: "Google", key: "google", url: "https://google.com" },
+    vega: { label: "Vega", key: "vega", url: "https://vega.hlprd.com/" }
+  }
+  dropdownSearchable.source = Object.values(sourceMapOptions)
+  dropdownSearchable.addEventListener("vegaClick", (e) => {
+    window.open(sourceMapOptions[e.detail].url, "_blank")
+  })
+
+  dropdownSearchable.addEventListener("vegaCreate", (e) => {
+    dropdownSearchable.source.push({ key: e.detail, label: e.detail })
+    dropdownSearchable.value = [...dropdownSearchable.value, e.detail]
+  })
+</script>

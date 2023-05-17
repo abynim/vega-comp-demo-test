@@ -1,0 +1,12 @@
+<vega-pagination
+  id="vega-pagination-custom-orders"
+  current="1"
+  page-size="10"
+  total="100"
+/>
+
+<!-- Requires Javascript -->
+<script>
+  const customOrders = document.querySelector("#vega-pagination-custom-orders")
+  customOrders.extensions = [["pageSizeSelector"], ["pageSelector"], ["goTo"]]
+</script>

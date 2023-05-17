@@ -2,11 +2,7 @@
   <vega-tab-group
     gap="size-8"
     [showCloseButton]="false"
-    [tabItems]="[
-      { label: 'Home', dataTarget: 'nav-home', prefixIcon: 'home' },
-      { label: 'Profile', dataTarget: 'nav-profile' },
-      { label: 'Contact', dataTarget: 'nav-contact' }
-    ]"
+    [tabItems]="tabItems"
     (vegaClick)="onTabClick($event)"
   >
     <vega-tab-group-panel

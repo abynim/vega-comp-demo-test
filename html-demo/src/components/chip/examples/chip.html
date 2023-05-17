@@ -1,0 +1,18 @@
+<vega-chip
+  id="vegaChip"
+  text="Chip"
+  clickable="true"
+  show-close-icon="true"
+></vega-chip>
+
+<!-- Requires Javascript -->
+<script>
+  const chip = document.querySelector("#vegaChip")
+
+  chip.addEventListener("vegaClick", (e) => {
+    console.log(e.currentTarget.value)
+  })
+  chip.addEventListener("vegaClose", (e) => {
+    e.currentTarget.remove()
+  })
+</script>

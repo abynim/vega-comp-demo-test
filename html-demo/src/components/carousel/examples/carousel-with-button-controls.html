@@ -1,0 +1,79 @@
+<vega-flex
+  use-native-flex="true"
+  gap="size-32"
+  direction="col"
+>
+  <div
+    class="v-w-1/3"
+    data-shrink="0"
+  >
+    <vega-flex
+      use-native-flex="true"
+      gap="size-16"
+    >
+      <vega-button-circle
+        id="prevPage#1"
+        variant="secondary"
+        size="default"
+        icon="arrow-left"
+        data-shrink="0"
+      >
+      </vega-button-circle>
+      <vega-button-circle
+        id="nextPage#1"
+        variant="secondary"
+        size="default"
+        icon="arrow-right"
+        data-shrink="0"
+      >
+      </vega-button-circle>
+    </vega-flex>
+  </div>
+  <div
+    class="v-w-2/3"
+    data-shrink="0"
+  >
+    <vega-carousel
+      id="carousel#1"
+      per-page="1"
+      spacing="size-32"
+      show-slider="true"
+    >
+      <vega-card
+        shadow="shadow-card"
+        background-color="bg-primary"
+        padding="size-24"
+        ><div class="v-text-primary v-font-p2-short">First page</div></vega-card
+      >
+      <vega-card
+        shadow="shadow-card"
+        background-color="bg-primary"
+        padding="size-24"
+        ><div class="v-text-primary v-font-p2-short">Second page</div></vega-card
+      >
+      <vega-card
+        shadow="shadow-card"
+        background-color="bg-primary"
+        padding="size-24"
+        ><div class="v-text-primary v-font-p2-short">Third page</div></vega-card
+      >
+    </vega-carousel>
+  </div>
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  const carousel = document.getElementById("carousel#1")
+  const prevIcon = document.getElementById("prevPage#1")
+  const nextIcon = document.getElementById("nextPage#1")
+
+  prevIcon.addEventListener("click", function () {
+    carousel.prevPage()
+  })
+
+  nextIcon.addEventListener("click", function () {
+    carousel.nextPage()
+  })
+
+  carousel.goToPage(1)
+</script>

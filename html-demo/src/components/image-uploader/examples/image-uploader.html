@@ -1,0 +1,15 @@
+<vega-image-uploader id="mock-uploading"></vega-image-uploader>
+
+<!-- Requires Javascript -->
+<script>
+  const uploader = document.querySelector("#mock-uploading")
+
+  uploader.addEventListener("vegaChange", async (e) => {
+    if (e.detail) {
+      uploader.status = "uploading"
+      setTimeout(() => {
+        uploader.status = "done"
+      }, 3000)
+    }
+  })
+</script>

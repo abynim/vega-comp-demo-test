@@ -83,6 +83,26 @@ import { PageNotificationWithActionsComponent } from "../components/page-notific
 import { PageNotificationTypesComponent } from "../components/page-notification/examples/page-notification-types/page-notification-types.component"
 import { ProgressTrackerComponent } from "../components/progress-tracker/examples/progress-tracker/progress-tracker.component"
 import { ProgressTrackerHorizontalComponent } from "../components/progress-tracker/examples/progress-tracker-horizontal/progress-tracker-horizontal.component"
+import { PaginationComponent } from "../components/pagination/examples/pagination/pagination.component"
+import { PaginationWithNumberOfPagesViewedComponent } from "../components/pagination/examples/pagination-with-number-of-pages-viewed/pagination-with-number-of-pages-viewed.component"
+import { PaginationWithVariableItemNumberDisplayComponent } from "../components/pagination/examples/pagination-with-variable-item-number-display/pagination-with-variable-item-number-display.component"
+import { PaginationCombinedExampleComponent } from "../components/pagination/examples/pagination-combined-example/pagination-combined-example.component"
+import { PaginationWithOrderingComponent } from "../components/pagination/examples/pagination-with-ordering/pagination-with-ordering.component"
+import { TableComponent } from "../components/table/examples/table/table.component"
+import { TableCustomColumnsComponent } from "../components/table/examples/table-custom-columns/table-custom-columns.component"
+import { TableWithSelectionComponent } from "../components/table/examples/table-with-selection/table-with-selection.component"
+import { TableWithSortingComponent } from "../components/table/examples/table-with-sorting/table-with-sorting.component"
+import { TableWithExpandableRowComponent } from "../components/table/examples/table-with-expandable-row/table-with-expandable-row.component"
+import { TableWithClickableRowComponent } from "../components/table/examples/table-with-clickable-row/table-with-clickable-row.component"
+import { TableOverflowColumnsWithEllipsisComponent } from "../components/table/examples/table-overflow-columns-with-ellipsis/table-overflow-columns-with-ellipsis.component"
+import { TableWithPaginationAndDividersComponent } from "../components/table/examples/table-with-pagination-and-dividers/table-with-pagination-and-dividers.component"
+import { TableDensityDefaultComponent } from "../components/table/examples/table-density-default/table-density-default.component"
+import { TableDensityCompactComponent } from "../components/table/examples/table-density-compact/table-density-compact.component"
+import { TableDensityRelaxedComponent } from "../components/table/examples/table-density-relaxed/table-density-relaxed.component"
+import { TableDensityResponsiveComponent } from "../components/table/examples/table-density-responsive/table-density-responsive.component"
+import { TableWithHorizontalPaddingComponent } from "../components/table/examples/table-with-horizontal-padding/table-with-horizontal-padding.component"
+import { TableEditableComponent } from "../components/table/examples/table-editable/table-editable.component"
+import { TableEditableComplexComponent } from "../components/table/examples/table-editable-complex/table-editable-complex.component"
 
 @NgModule({
   declarations: [
@@ -164,7 +184,27 @@ import { ProgressTrackerHorizontalComponent } from "../components/progress-track
     PageNotificationWithActionsComponent,
     PageNotificationTypesComponent,
     ProgressTrackerComponent,
-    ProgressTrackerHorizontalComponent
+    ProgressTrackerHorizontalComponent,
+    PaginationComponent,
+    PaginationWithNumberOfPagesViewedComponent,
+    PaginationWithVariableItemNumberDisplayComponent,
+    PaginationCombinedExampleComponent,
+    PaginationWithOrderingComponent,
+    TableComponent,
+    TableCustomColumnsComponent,
+    TableWithSelectionComponent,
+    TableWithSortingComponent,
+    TableWithExpandableRowComponent,
+    TableWithClickableRowComponent,
+    TableOverflowColumnsWithEllipsisComponent,
+    TableWithPaginationAndDividersComponent,
+    TableDensityDefaultComponent,
+    TableDensityCompactComponent,
+    TableDensityRelaxedComponent,
+    TableDensityResponsiveComponent,
+    TableWithHorizontalPaddingComponent,
+    TableEditableComponent,
+    TableEditableComplexComponent
   ],
   imports: [BrowserModule, AppRoutingModule, VegaComponentModule, FormsModule, ReactiveFormsModule],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

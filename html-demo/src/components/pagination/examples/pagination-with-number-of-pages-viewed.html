@@ -1,0 +1,12 @@
+<vega-pagination
+  id="pagination1"
+  current="1"
+  page-size="10"
+  total="100"
+/>
+
+<!-- Requires Javascript -->
+<script>
+  const pagination1 = document.querySelector("#pagination1")
+  pagination1.extensions = [["currentPageLabel"], ["pageSelector"]]
+</script>

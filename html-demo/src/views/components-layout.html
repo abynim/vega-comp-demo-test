@@ -1,0 +1,28 @@
+{% extends "views/layout.html" %}
+
+{% block components %}
+<div>
+  <!-- Component -->
+  <div>
+    <div class="v-font-h4 v-text-primary v-mb-size-24">
+      Accordion
+    </div>
+    <div class="v-mb-size-24">
+      <div class="v-mb-size-24">
+        <div class="v-font-btn-label v-text-primary v-mb-size-12">
+          Example with chevron on left
+        </div>
+        <div class="v-mb-size-32">
+          <div class="v-bg-backdrop-popover v-p-size-24 v-rounded-12">
+            <div class="v-bg-primary v-p-size-24 v-rounded-12">
+              {% block component %}{% endblock %}
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Component -->
+</div>
+
+{% endblock %}

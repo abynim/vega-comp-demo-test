@@ -1,0 +1,46 @@
+<vega-flex direction="col">
+  <vega-loading-indicator
+    size="large"
+    mode="determinate"
+    id="errorLoader"
+    percent="0"
+  ></vega-loading-indicator>
+  <vega-button-link
+    size="small"
+    id="refreshError"
+    >Refresh</vega-button-link
+  >
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  var errorLoaderComponent = {
+    errorLoader: document.querySelector("#errorLoader"),
+
+    initErrorLoader: function () {
+      const errorLoaderTimer = setInterval(() => {
+        if (this.errorLoader.percent < 80) {
+          this.errorLoader.percent += 1
+          this.errorLoader.label = `${this.errorLoader.percent}%`
+        } else {
+          this.errorLoader.status = "error"
+          this.errorLoader.label = "Error"
+          this.errorLoader.hint = `${this.errorLoader.percent}%`
+          clearInterval(errorLoaderTimer)
+        }
+      }, 30)
+    },
+    onRefresh: function () {
+      const refreshErrorButton = document.querySelector("#refreshError")
+      refreshErrorButton.addEventListener("vegaClick", (e) => {
+        this.errorLoader.percent = 0
+        this.initErrorLoader()
+      })
+    },
+    init: function () {
+      this.initErrorLoader()
+      this.onRefresh()
+    }
+  }
+  errorLoaderComponent.init()
+</script>

@@ -1,0 +1,21 @@
+<vega-radio-group
+  name="fruit"
+  value="apple"
+  label="Select a fruit"
+>
+  <vega-radio value="apple"> Apple </vega-radio>
+  <vega-radio value="orange"> Orange </vega-radio>
+</vega-radio-group>
+
+<!-- Requires Javascript -->
+<script>
+  const radios = document.querySelector("vega-radio-group")
+  radios.vegaFlexProp = {
+    gap: "size-8",
+    direction: "col",
+    breakpoint: "None",
+    alignItem: "start",
+    justifyContent: "start",
+    margin: "0"
+  }
+</script>

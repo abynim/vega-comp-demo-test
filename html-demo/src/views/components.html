@@ -1,0 +1,395 @@
+{% extends "views/components-layout.html" %}
+
+{% block components %}
+{%- from "views/partials/macros/component-content.html" import componentContent -%}
+
+{% if component === 'accordion' %}
+<div>
+  {{ componentContent('Accordion',[
+    {title: 'Example with chevron on left', src: 'components/accordion/examples/accordion.html'},
+    {title: 'Example with chevron on right', src: 'components/accordion/examples/accordion-with-right-chevron.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'app-footer' %}
+<div>
+  {{ componentContent('App Footer',[
+    {title: 'Standard App Footer', src: 'components/app-footer/examples/app-footer.html'},
+    {title: 'App Footer with Additional Links', src: 'components/app-footer/examples/app-footer-with-additional-links.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'badge' %}
+<div>
+  {{ componentContent('Badge',[
+    {title: 'Example', src: 'components/badge/examples/badge.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'banner' %}
+<div>
+  {{ componentContent('Banner',[
+    {title: 'Example', src: 'components/banner/examples/banner.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'button' %}
+<div>
+  {{ componentContent('Button',[
+    {title: 'Primary variant', src: 'components/button/examples/button.html'},
+    {title: 'Primary variant with icon', src: 'components/button/examples/button-with-icon.html'},
+    {title: 'Secondary Variant', src: 'components/button/examples/button-secondary-variant.html'},
+    {title: 'Small Button', src: 'components/button/examples/button-small.html'},
+    {title: 'Large Button', src: 'components/button/examples/button-large.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'button-circle' %}
+<div>
+  {{ componentContent('Button Circle',[
+    {title: 'Example', src: 'components/button-circle/examples/button-circle.html'},
+    {title: 'Search Button', src: 'components/button-circle/examples/button-circle-with-search-icon.html'},
+    {title: 'Danger Button', src: 'components/button-circle/examples/button-circle-danger.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'button-link' %}
+<div>
+  {{ componentContent('Button Link',[
+    {title: 'Basic Link', src: 'components/button-link/examples/button-link.html'},
+    {title: 'Link with icon', src: 'components/button-link/examples/button-link-with-icon.html'},
+    {title: 'Link Danger', src: 'components/button-link/examples/button-link-danger.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'carousel' %}
+<div>
+  {{ componentContent('Button Link',[
+    {title: 'Example', src: 'components/carousel/examples/carousel.html'},
+    {title: 'Example with button controls', src: 'components/carousel/examples/carousel-with-button-controls.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'checkbox' %}
+<div>
+  {{ componentContent('Checkbox',[
+    {title: 'Single Checkbox', src: 'components/checkbox/examples/single-checkbox.html'},
+    {title: 'Checkbox Group', src: 'components/checkbox/examples/checkbox-group.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'chip' %}
+<div>
+  {{ componentContent('Chip',[
+    {title: 'Example', src: 'components/chip/examples/chip.html'},
+    {title: 'Example with Border and Responsive Size', src: 'components/chip/examples/chip-with-border-and-responsive-size.html'},
+    {title: 'Status Example', src: 'components/chip/examples/chip-status.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'color-picker' %}
+<div>
+  {{ componentContent('Color Picker',[
+    {title: 'Example', src: 'components/color-picker/examples/color-picker.html'},
+    {title: 'Example with new color array', src: 'components/color-picker/examples/color-picker-with-color-array.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'combo-box' %}
+<div>
+  {{ componentContent('Combo Box',[
+    {title: 'Example', src: 'components/combo-box/examples/combo-box.html'},
+    {title: 'Example with createable options', src: 'components/combo-box/examples/combo-box-with-creatable-options.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'counter-badge' %}
+<div>
+  {{ componentContent('Counter Badge',[
+    {title: 'Example', src: 'components/counter-badge/examples/counter-badge.html'},
+    {title: 'Example using Dot', src: 'components/counter-badge/examples/counter-badge-with-icon.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'date-picker' %}
+<div>
+  {{ componentContent('Date Picker',[
+    {title: 'Example', src: 'components/date-picker/examples/date-picker.html'},
+    {title: 'Range Example', src: 'components/date-picker/examples/date-picker-with-range.html'},
+    {title: 'Range with Min and Max Date', src: 'components/date-picker/examples/date-picker-with-range-with-min-max-date.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'dropdown' %}
+<div>
+  {{ componentContent('Dropdown Menu',[
+    {title: 'Example with linkable menu', src: 'components/dropdown/examples/dropdown.html'},
+    {title: 'Example with dynamic searchable menu', src: 'components/dropdown/examples/dropdown-with-dynamic-searchable-menu.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'icon' %}
+<div>
+  {{ componentContent('Icon',[
+    {title: 'Example', src: 'components/icon/examples/icon.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'image-uploader' %}
+<div>
+  {{ componentContent('Image Uploader',[
+    {title: 'Example', src: 'components/image-uploader/examples/image-uploader.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'input' %}
+<div>
+  {{ componentContent('Input Field',[
+    {title: 'Example', src: 'components/input/examples/input.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'input-credit-card' %}
+<div>
+  {{ componentContent('Input Credit Card',[
+    {title: 'Example', src: 'components/input-credit-card/examples/input-credit-card.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'item-toggle' %}
+<div>
+  {{ componentContent('Item Toggle',[
+    {title: 'Example', src: 'components/item-toggle/examples/item-toggle.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'modal' %}
+<div>
+  {{ componentContent('Item Toggle',[
+    {title: 'Example', src: 'components/modal/examples/modal.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'loading-indicator' %}
+<div>
+  {{ componentContent('Loading Indicator',[
+    {title: 'Indeterminate Examples', children:[
+    {title: 'Circle', src: 'components/loading-indicator/examples/loading-indicator.html'},
+    {title: 'Bar', src: 'components/loading-indicator/examples/loading-indicator-bar.html'}
+    ]},
+    {title:'Indeterminate Examples', children:[
+    {title: 'Circle', src:'components/loading-indicator/examples/loading-indicator-circle-determinate.html'},
+    {title: 'Bar', src:'components/loading-indicator/examples/loading-indicator-bar-determinate.html'},
+    {title: 'Success', src:'components/loading-indicator/examples/loading-indicator-circle-determinate-success.html'},
+    {title: 'Error', src:'components/loading-indicator/examples/loading-indicator-circle-determinate-error.html'}
+    ]}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'page-notification' %}
+<div>
+  {{ componentContent('PageNotification',[
+    {title: 'With Titles', src: 'components/page-notification/examples/page-notification.html'},
+    {title: 'With Actions', src: 'components/page-notification/examples/page-notification-with-actions.html'},
+    {title: 'Notification Types', src: 'components/page-notification/examples/page-notification-types.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'pagination' %}
+<div>
+  {{ componentContent('Pagination',[
+    {title: 'Simple Pagination', src: 'components/pagination/examples/pagination.html'},
+    {title: 'Example with number of pages viewed', src: 'components/pagination/examples/pagination-with-number-of-pages-viewed.html'},
+    {title: 'Example with variable item number display', src: 'components/pagination/examples/pagination-with-variable-item-number-display.html'},
+    {title: 'Combined Example', src: 'components/pagination/examples/pagination-combined-example.html'},
+    {title: 'Example with ordering', src: 'components/pagination/examples/pagination-with-ordering.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'progress-tracker' %}
+<div>
+  {{ componentContent('ProgressTracker',[
+    {title: 'Example', src: 'components/progress-tracker/examples/progress-tracker.html'},
+    {title: 'Horizontal Example', src: 'components/progress-tracker/examples/progress-tracker-horizontal.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'popover' %}
+<div>
+  {{ componentContent('Popover',[
+    {title: 'Example', src: 'components/popover/examples/popover.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'radio' %}
+<div>
+  {{ componentContent('Radio Button',[
+    {title: 'Example', src: 'components/radio/examples/radio.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'input-select' %}
+<div>
+  {{ componentContent('Input Select',[
+    {title: 'Example', src: 'components/input-select/examples/input-select.html'},
+    {title: 'Small Example', src: 'components/input-select/examples/input-select-small.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'sidenav' %}
+<div>
+  {{ componentContent('Sidebar Navigation',[
+    {title: 'Example', src: 'components/sidenav/examples/sidenav.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'stepper' %}
+<div>
+  {{ componentContent('Stepper',[
+    {title: 'Example', src: 'components/stepper/examples/stepper.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'tab-group' %}
+<div>
+  {{ componentContent('Tab Group',[
+    {title: 'Basic Example', src: 'components/tab-group/examples/tab-group.html'},
+    {title: 'Example with Close Buttons', src: 'components/tab-group/examples/tab-group-with-close-buttons.html'},
+    {title: 'Example with overflow tabs', src: 'components/tab-group/examples/tab-group-with-overflow-tabs.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'table' %}
+<div>
+  {{ componentContent('Table',[
+    {title: 'Basic Example', src: 'components/table/examples/table.html'},
+    {title: 'Example with Custom Columns', src: 'components/table/examples/table-custom-columns.html'},
+    {title: 'Example with Selection', src: 'components/table/examples/table-with-selection.html'},
+    {title: 'Example with Sorting', src: 'components/table/examples/table-with-sorting.html'},
+    {title: 'Expandable Row Example', src: 'components/table/examples/table-with-expandable-row.html'},
+    {title: 'Clickable Row Example', src: 'components/table/examples/table-with-clickable-row.html'},
+    {title: 'Overflow columns with Ellipsis', src: 'components/table/examples/table-overflow-columns-with-ellipsis.html'},
+    {title: 'Example with Pagination and Dividers', src: 'components/table/examples/table-with-pagination-and-dividers.html'},
+    {title: 'Density Examples', children:[
+    {title:null, src: 'components/table/examples/table-density-default.html'},
+    {title:null, src: 'components/table/examples/table-density-compact.html'},
+    {title:null, src: 'components/table/examples/table-density-relaxed.html'},
+    {title:null, src: 'components/table/examples/table-density-responsive.html'}
+    ]},
+    {title: 'Horizontal Padding Example', src:'components/table/examples/table-with-horizontal-padding.html'},
+    {title: 'Basic Editable Table Example', src:'components/table/examples/table-editable.html'},
+    {title: 'Complex Editable Table Example', src:'components/table/examples/table-editable-complex.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'textarea' %}
+<div>
+  {{ componentContent('Text Area',[
+    {title: 'Basic Example', src: 'components/textarea/examples/textarea.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'time-picker' %}
+<div>
+  {{ componentContent('Time Picker',[
+    {title: '12-hour Example', src: 'components/time-picker/examples/time-picker.html'},
+    {title: '24-hour Example', src: 'components/time-picker/examples/time-picker-24-hour.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'toggle-switch' %}
+<div>
+  {{ componentContent('Time Picker',[
+    {title: 'Example', src: 'components/toggle-switch/examples/toggle-switch.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'tooltip' %}
+<div>
+  {{ componentContent('Tooltip',[
+    {title: 'Example', src: 'components/tooltip/examples/tooltip.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'box' %}
+<div>
+  {{ componentContent('Box',[
+    {title: 'Example', src: 'components/box/examples/box.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'card' %}
+<div>
+  {{ componentContent('Card',[
+    {title: 'Example', src: 'components/card/examples/card.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'flex' %}
+<div>
+  {{ componentContent('Flex',[
+    {title: 'Child Items with the same width', src: 'components/flex/examples/flex.html'},
+    {title: 'Child Items with a different width', src: 'components/flex/examples/flex-with-different-width.html'},
+    {title: 'Combination', src: 'components/flex/examples/flex-combination.html'},
+    {title: 'Align and Justify', src: 'components/flex/examples/flex-align-and-justify.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'grid' %}
+<div>
+  {{ componentContent('Grid',[
+    {title: 'Example', src: 'components/grid/examples/grid.html'},
+    {title: 'Example with different sizes', src: 'components/grid/examples/grid-with-different-sizes.html'}
+  ]) }}
+</div>
+{% endif %}
+
+{% if component === 'form' %}
+<div>
+  {{ componentContent('form',[
+    {title: 'Example', src: 'components/form/examples/form.html'}
+  ]) }}
+</div>
+{% endif %}
+
+
+{% endblock %}

@@ -1,0 +1,45 @@
+<vega-flex direction="col">
+  <vega-loading-indicator
+    size="large"
+    mode="determinate"
+    id="successLoader"
+    percent="0"
+  ></vega-loading-indicator>
+  <vega-button-link
+    size="small"
+    id="refresh"
+    >Refresh</vega-button-link
+  >
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  var successLoaderComponent = {
+    successLoader: document.querySelector("#successLoader"),
+
+    initSuccessLoader: function () {
+      const successLoaderTimer = setInterval(() => {
+        if (this.successLoader.percent < 100) {
+          this.successLoader.percent += 1
+          this.successLoader.label = `${this.successLoader.percent}%`
+        } else {
+          this.successLoader.status = "success"
+          this.successLoader.Label = "Success"
+          clearInterval(successLoaderTimer)
+        }
+      }, 30)
+    },
+    onRefresh: function () {
+      const refreshButton = document.querySelector("#refresh")
+      refreshButton.addEventListener("vegaClick", (e) => {
+        this.successLoader.percent = 0
+        this.initSuccessLoader()
+      })
+    },
+    init: function () {
+      this.initSuccessLoader()
+      this.onRefresh()
+    }
+  }
+  successLoaderComponent.init()
+</script>

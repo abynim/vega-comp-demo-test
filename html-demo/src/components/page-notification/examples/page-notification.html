@@ -1,0 +1,37 @@
+<vega-flex
+  direction="col"
+  gap="size-20"
+  id="basicTemplate"
+  key="{new"
+  Date().getTime()}
+>
+  <div>
+    <vega-flex gap="size-20">
+      <vega-button id="with-title">With title</vega-button>
+      <vega-button
+        id="no-title"
+        variant="secondary"
+      >
+        No title
+      </vega-button>
+    </vega-flex>
+  </div>
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  setTimeout(() => {
+    document.querySelector("#basicTemplate #with-title").addEventListener("vegaClick", () => {
+      window.VegaNotify.open({
+        title: "Title",
+        message:
+          "This is the content of notification. This is the content of notification.This is the content of notification.This is the content of notification."
+      })
+    })
+    document.querySelector("#basicTemplate #no-title").addEventListener("vegaClick", () => {
+      window.VegaNotify.open({
+        message: "No title notification"
+      })
+    })
+  }, 100)
+</script>

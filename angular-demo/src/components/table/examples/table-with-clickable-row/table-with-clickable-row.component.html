@@ -1,0 +1,22 @@
+<vega-flex direction="col">
+  <vega-table
+    [rowClickable]="true"
+    [columns]="columns"
+    [dataSource]="dataSource"
+    (vegaRowClick)="onRowClick($event)"
+  />
+  <div class="v-bg-primary v-text-primary">
+    <p class="v-font-h6 v-mt-size-12">Try to click a row</p>
+
+    <div *ngIf="clickedRowRecord">
+      <label class="v-font-field-label">Clicked Row Record:</label>
+      <p class="v-font-p2-short v-text-primary">
+        {{ stringifyClickedRowRecord(clickedRowRecord) }}
+      </p>
+      <label class="v-font-field-label">Clicked Row Index:</label>
+      <p class="v-font-p2-short v-text-primary">
+        {{ clickedRecordRowIndex(clickedRowRecord) }}
+      </p>
+    </div>
+  </div>
+</vega-flex>

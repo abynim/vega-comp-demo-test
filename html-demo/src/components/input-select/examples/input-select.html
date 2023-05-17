@@ -1,0 +1,19 @@
+<vega-input-select
+  id="my-select"
+  required="false"
+  placeholder="placeholder text"
+  max-height="400"
+  auto-validation="true"
+>
+</vega-input-select>
+
+<!-- Requires Javascript -->
+<script>
+  const vegaInputSelect = document.getElementById("my-select")
+  vegaInputSelect.source = [
+    { id: "id1", displayName: "name1" },
+    { id: "id2", displayName: "name2" },
+    { id: "id3", displayName: "name3" },
+    { id: "id4", displayName: "name4" }
+  ]
+</script>

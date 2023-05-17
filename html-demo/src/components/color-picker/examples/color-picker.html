@@ -1,0 +1,27 @@
+<vega-color-picker
+  id="colorPicker"
+  label="Choose a Color"
+  value="#73E6DC"
+  auto-validation="true"
+  hint="Select a color from the list"
+>
+</vega-color-picker>
+
+<div
+  id="box"
+  style="
+    margin-top: 12px;
+    border-radius: 8px;
+    width: 200px;
+    height: 200px;
+    background-color: #73e6dc;
+  "
+/>
+
+<!-- Requires Javascript -->
+<script>
+  const picker = document.querySelector("#colorPicker")
+  picker.addEventListener("vegaChange", (e) => {
+    document.querySelector("#box").style.backgroundColor = e.currentTarget.value
+  })
+</script>

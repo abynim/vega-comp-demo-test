@@ -1,0 +1,20 @@
+<!--
+    this vega-flex defines a two columns of layout. The width of first column is fixed.
+    And flex-direction will be changed to row when page size is under "lg"
+-->
+<vega-flex gap="size-8">
+  <div class="v-bg-action v-text-inverted-primary v-w-size-40 v-bg-action vega-flex-shrink-0">
+    Child Item 1
+  </div>
+  <div>
+    <!--
+            this vega-flex defines  three columns of layout. The with of all child items are the same (33.3%).
+            And flex-direction will be changed to row when page size is under "size-8"
+        -->
+    <vega-flex gap="size-8">
+      <div class="v-bg-action v-text-inverted-primary v-p-size-8">Child Item 2</div>
+      <div class="v-bg-action v-text-inverted-primary v-p-size-8">Child Item 3</div>
+      <div class="v-bg-action v-text-inverted-primary v-p-size-8">Child Item 4</div>
+    </vega-flex>
+  </div>
+</vega-flex>

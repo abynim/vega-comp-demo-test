@@ -27,7 +27,7 @@
             "stylePreprocessorOptions": {
               "includePaths": ["node_modules/@heartlandone/vega/style"]
             },
-            "styles": ["src/styles.scss", "node_modules/@heartlandone/vega/style/vega_min.css"],
+            "styles": ["src/styles.scss", "node_modules/@heartlandone/vega/style/vega.css"],
             "scripts": []
           },
           "configurations": {

@@ -1,0 +1,145 @@
+<div id="editable-template-basic">
+  <vega-card padding="size-20">
+    <vega-table></vega-table>
+    <div class="v-mt-size-12">
+      <vega-button-link
+        id="add"
+        size="small"
+        icon="plus-sign"
+      >
+        Add New
+      </vega-button-link>
+    </div>
+  </vega-card>
+  <div class="v-mt-size-12">
+    <vega-flex gap="size-8">
+      <vega-button id="save-btn">Get All Rows Data & Save</vega-button>
+    </vega-flex>
+  </div>
+  <div class="v-mt-size-8 v-text-primary">
+    <div class="v-font-field-label v-text-success">Saved Data:</div>
+    <div
+      id="result"
+      class="v-font-field-label"
+      id="result"
+    ></div>
+  </div>
+</div>
+
+<!-- Requires Javascript -->
+<script>
+  const tableRef = document.querySelector("#editable-template-basic vega-table")
+  const printDataResultComplex = (data) => {
+    document.querySelector("#editable-template-basic #result").innerHTML = JSON.stringify(
+      data,
+      null,
+      2
+    )
+  }
+  const editTableDataSource = [
+    {
+      key: "1",
+      employeeId: "1",
+      name: "Employee 1",
+      balance: 100
+    },
+    {
+      key: "2",
+      employeeId: "2",
+      name: "Employee 2",
+      balance: 300
+    }
+  ]
+  const onAddListenerComplex = () => {
+    document
+      .querySelector("#editable-template-basic #add")
+      .addEventListener("vegaClick", async () => {
+        await tableRef.addNewRow()
+      })
+  }
+  const onSaveListenerComplex = () => {
+    const saveBtn = document.querySelector("#editable-template-basic #save-btn")
+    saveBtn.addEventListener("vegaClick", async () => {
+      const rowData = await tableRef.getRowsData()
+      printDataResultComplex(rowData)
+      await tableRef.saveAllEditRows()
+    })
+  }
+  tableRef.columns = [
+    {
+      label: "ID #",
+      prop: "employeeId",
+      editable: true
+    },
+    {
+      label: "Name",
+      prop: "name",
+      editable: true
+    },
+    {
+      label: "Balance",
+      prop: "balance",
+      editable: true
+    },
+    {
+      label: "Actions",
+      width: "120px",
+      renderFormItem: (createElement, rowKey, record, index, { rowForm, isNewRow }) => {
+        return createElement("div", {}, [
+          createElement("vega-button-circle", {
+            variant: "icon-only",
+            icon: "checkmark",
+            onVegaClick: async () => {
+              tableRef.saveEditRow(rowKey)
+              const data = await tableRef.getRowData(rowKey)
+              printDataResultComplex(data)
+            }
+          }),
+          createElement("vega-button-circle", {
+            variant: "icon-only",
+            icon: "close",
+            class: !isNewRow ? "" : "v-hidden",
+            onVegaClick: () => {
+              tableRef.stopRowEditMode(rowKey)
+            }
+          }),
+          createElement("vega-button-circle", {
+            variant: "icon-only",
+            icon: "delete-bin",
+            class: isNewRow ? "" : "v-hidden",
+            danger: true,
+            onVegaClick: () => {
+              if (confirm("Are you sure you want to delete this row?")) {
+                tableRef.removeRow(record.key)
+              }
+            }
+          })
+        ])
+      },
+      render: (h, rowKey) => {
+        return h("div", {}, [
+          h("vega-button-circle", {
+            variant: "icon-only",
+            icon: "edit-line",
+            onVegaClick: () => {
+              tableRef.startRowEditMode(rowKey)
+            }
+          }),
+          h("vega-button-circle", {
+            variant: "icon-only",
+            icon: "delete-bin",
+            danger: true,
+            onVegaClick: async () => {
+              if (confirm("Are you sure you want to delete this row?")) {
+                await tableRef.removeRow(rowKey)
+              }
+            }
+          })
+        ])
+      }
+    }
+  ]
+  tableRef.dataSource = editTableDataSource
+  onAddListenerComplex()
+  onSaveListenerComplex()
+</script>

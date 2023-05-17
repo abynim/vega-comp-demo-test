@@ -1,0 +1,49 @@
+<vega-flex
+  gap="size-20"
+  id="types-examples"
+>
+  <vega-button
+    id="warning"
+    variant="secondary"
+  >
+    Warning
+  </vega-button>
+  <vega-button
+    id="success"
+    variant="secondary"
+  >
+    Success
+  </vega-button>
+  <vega-button
+    id="error"
+    variant="secondary"
+  >
+    Error
+  </vega-button>
+  <vega-button
+    id="info"
+    variant="secondary"
+  >
+    Info
+  </vega-button>
+</vega-flex>
+
+<!-- Requires Javascript -->
+<script>
+  setTimeout(() => {
+    document.querySelector("#types-examples").direction = {
+      default: "row",
+      S: "col",
+      M: "row"
+    }
+    document.querySelectorAll("#types-examples vega-button").forEach((item) => {
+      item.addEventListener("vegaClick", async (e) => {
+        const target = e.target
+        const id = await window.VegaNotify.open({
+          type: target.id,
+          message: `${e.target.textContent.toUpperCase()}`
+        })
+      })
+    })
+  }, 100)
+</script>
